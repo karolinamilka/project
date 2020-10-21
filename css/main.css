@@ -241,10 +241,5 @@ h2 {
   left: 26px;
 }
 
-.container-custom {
-  grid-template: 5px;
-  justify-self: 5px;
-  border: 1px solid #000;
-}
 
 /*# sourceMappingURL=main.css.map */
