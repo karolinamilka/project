@@ -70,7 +70,7 @@ body {
   display: inline-block;
   border: 2px solid #67e5fa;
   position: absolute;
-  top: 97px;
+  top: 98px;
   margin-left: -59px;
 }
 
@@ -80,13 +80,13 @@ body {
 
 .container-custom .header_nav .header__li-2:hover::after {
   content: "";
-  width: 75px;
+  width: 78px;
   color: #67e5fa;
   display: inline-block;
   border: 2px solid #67e5fa;
   position: absolute;
-  top: 97px;
-  margin-left: -3.7%;
+  top: 98px;
+  margin-left: -76px;
 }
 
 .container-custom .header_nav .header__li-3 {
@@ -100,8 +100,8 @@ body {
   display: inline-block;
   border: 2px solid #67e5fa;
   position: absolute;
-  top: 97px;
-  margin-left: -83px;
+  top: 98px;
+  margin-left: -87px;
 }
 
 .container-custom .header_nav .header__li-4 {
@@ -115,7 +115,7 @@ body {
   display: inline-block;
   border: 2px solid #67e5fa;
   position: absolute;
-  top: 97px;
+  top: 98px;
   margin-left: -56px;
 }
 
@@ -125,37 +125,38 @@ body {
 
 .container-custom .header_nav .header__li-5:hover::after {
   content: "";
-  width: 53px;
+  width: 57px;
   color: #67e5fa;
   display: inline-block;
   border: 2px solid #67e5fa;
   position: absolute;
-  top: 97px;
-  margin-left: -48px;
+  top: 98px;
+  margin-left: -50px;
 }
 
 .container-custom .header_nav .header__li-6:hover::after {
   content: "";
-  width: 69px;
+  width: 74px;
   color: #67e5fa;
   display: inline-block;
   border: 2px solid #67e5fa;
   position: absolute;
-  top: 97px;
-  margin-left: -72.7px;
+  top: 98px;
+  margin-left: -73px;
 }
 
 .wr-home {
   background-image: url("../img/xps-8pb7Hq539Zw-unsplash.jpg");
   background-size: cover;
   background-position: center;
-  height: 73vh;
+  padding: 272px 0 282px;
 }
 
 h2 {
   font-family: "Raleway", serif;
   font-size: 60px;
   color: #fff;
+  font-weight: 200;
 }
 
 .wr-home button {
@@ -177,8 +178,6 @@ h2 {
   justify-content: center;
   align-content: center;
   align-items: center;
-  padding-top: 275px;
-  padding-left: 3px;
 }
 
 .wr-service .wr-service_web,
@@ -204,7 +203,7 @@ h2 {
 .wr-service h1 {
   font-family: "Raleway", serif;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 500;
 }
 .wr-service .wr-service_web h1 {
   padding-top: 54px;
@@ -241,5 +240,94 @@ h2 {
   left: 26px;
 }
 
+.wr-responsive {
+  margin-top: 138px;
+  background-color: #f7f7f7;
+}
+.wr-responsive .wr-responsive_tabs {
+  border: 1px solid grey;
+  height: 47px;
+  width: 470px;
+}
+.wr-responsive .wr-responsive_menu {
+  display: flex;
+  padding-top: 136px;
+  padding-left: 145px;
+}
+.wr-responsive .wr-responsive_main {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-left: 85px;
+}
+.wr-responsive .wr-responsive_main h1,
+.wr-responsive .wr-responsive_main p {
+  font-family: "Raleway", serif;
+}
+.wr-responsive .wr-responsive_main h1 {
+  font-size: 40px;
+}
+.wr-responsive .wr-responsive_main p {
+  font-size: 15px;
+  width: 550px;
+  line-height: 18px;
+}
+.wr-responsive .wr-responsive__text {
+  padding-top: 33px;
+}
+.wr-responsive .wr-responsive__button button {
+  font-family: "Raleway";
+  color: #00e1ff;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-size: 12pt;
+  height: 51px;
+  width: 172px;
+  border: 2px solid #00e1ff;
+}
+.wr-responsive .wr-responsive__button {
+  padding-top: 36px;
+}
+
+.wr-design {
+  background-image: url(../img/claudio-schwarz-purzlbaum-dMi8LcYRCIE-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 181px 0 102px;
+  margin-top: -118px;
+}
+.wr-design h3, .wr-design p {
+  font-family: "Raleway", serif;
+  color: #fff;
+}
+.wr-design .wr-design_main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -81px;
+  margin-left: 5px;
+}
+.wr-design h3 {
+  font-size: 40px;
+}
+.wr-design p {
+  text-align: center;
+  width: 800px;
+  padding-left: 3px;
+  padding-top: 54px;
+  font-size: 13px;
+  line-height: 16px;
+}
+.wr-design h3::after {
+  content: "";
+  width: 171px;
+  color: #00e1ff;
+  display: block;
+  border: 2px solid #67e5fa;
+  position: relative;
+  top: 26px;
+  left: 153px;
+}
 
 /*# sourceMappingURL=main.css.map */
