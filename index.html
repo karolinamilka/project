@@ -10,13 +10,11 @@
 </head>
 
 <body>
-
     <!-- header -->
     <header>
-
         <div class="container-custom">
             <div class="header">
-                <div> <a href="./index.html"><img class="header__logo" src="./img/logo.png"></a></div>
+                <div class="header_logo"> <a href="./index.html"><img class="header__logo" src="./img/logo.png"></a></div>
                 <div class="header_links">
                     <nav class="header_nav">
                         <ul>
@@ -32,7 +30,6 @@
             </div>
         </div>
     </header>
-
     <!-- section 1 -->
     <section class="wr-home">
         <div class="container-custom">
@@ -42,7 +39,6 @@
             </div>
         </div>
         </div>
-
     </section>
     <!-- section 2 -->
     <section class="wr-service">
@@ -70,50 +66,250 @@
             </div>
         </div>
     </section>
-
     <!-- section 3 -->
-    <section class="wr-responsive">
+    <section class="responsive">
         <div class="container-custom">
-            <div class="wr-responsive_tabs"></div>
-
-
-            <div class="wr-responsive_menu">
-                <div class="wr-responsive__phones">
-                    <img src="./img/Phones.png" alt="phones">
+            <div id="wrapper">
+                <div id="tabContainer">
+                    <div id="tabs">
+                        <ul>
+                            <li id="tabHeader_1">START TOUR</li>
+                            <li id="tabHeader_2">FOR ALL DEVICES</li>
+                        </ul>
+                    </div>
+                    <div id="tabscontent">
+                        <div class="tabpage" id="tabpage_1">
+                            <img class="responsive__img" src="./img/phone.png" alt="phones">
+                            <!-- srcset="./img/Phones@2x.png 2x" -->
+                            <div class="responsive__main">
+                                <h1 class="responsive__headline">Fully Responsive</h1>
+                                <p class="responsive__subtext">Eum cu tantas legere complectitur, hinc utamur ea eam.
+                                    Lorem ipsum dolor sit amet, volumus temporibus definitionem id ius, vel ut magna
+                                    timeam appareat, movet timeam maiorum an ius.</p>
+                                <p class="responsive__subtext">Sea libris dictas lucilius et. Ne cibo urbanitas pri, qui
+                                    ad populo accusamus. Quod congue ea ius, nisl aperiri sit ut.</p>
+                                <button class="responsive__btn">START TOUR</button>
+                            </div>
+                        </div>
+                        <div class="tabpage hidden" id="tabpage_2">
+                            <img class="responsive__img" src="./img/phone.png" alt="phones">
+                            <!-- srcset="./img/Phones@2x.png 2x" -->
+                            <div class="responsive__main">
+                                <h1 class="responsive__headline">Fully Responsive</h1>
+                                <p class="responsive__subtext">Eum cu tantas legere complectitur, hinc utamur ea eam.
+                                    Lorem ipsum dolor sit amet, volumus temporibus definitionem id ius, vel ut magna
+                                    timeam appareat, movet timeam maiorum an ius.</p>
+                                <p class="responsive__subtext">Sea libris dictas lucilius et. Ne cibo urbanitas pri, qui
+                                    ad populo accusamus. Quod congue ea ius, nisl aperiri sit ut.</p>
+                                <button class="responsive__btn">START TOUR</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            <div class="wr-responsive_main">
-            <div>
-                <h1>Fully Responsive</h1>
             </div>
-            <div class="wr-responsive__text">
-                <p>Eum cu tantas legere complectitur, hinc utamur ea eam. Lorem ipsum dolor sit amet, volumus temporibus
-                    definitionem id ius, vel ut magna timeam appareat, movet timeam maiorum an ius.
-                    </p>
-                    <p>Sea libris dictas lucilius et. Ne cibo urbanitas pri, qui ad populo accusamus. Quod congue ea ius,
-                        nisl aperiri sit ut.</p>
+    </section>
+    <!-- section 4 -->
+    <section class="wr-design">
+        <div class="container-custom">
+            <div class="wr-design_main">
+                <h3>Modern And Clean Design</h3>
+                <p>Eum cu tantas legere complectitur, hinc utamur ea eam. Eum patrioque mnesarchum eu, diam erant
+                    convenire et vis. Et essent evertitur sea, vis cu ubique referrentur, sed eu dicant expetendis.</p>
             </div>
-            <div class="wr-responsive__button">
-                <button>START TOUR</button>
+            <div class="wr-design__img">
+                <ul class="accordion">
+                    <li>
+                        <img src="./img/screenDO.png" alt="left screen">
+                    </li>
+                    <li>
+                        <img src="./img/screenDO.png" alt="middle-screen">
+                    </li>
+                    <li>
+                        <img src="./img/screenDO.png" alt="right-screen">
+                    </li>
+                </ul>
             </div>
-        </div>
-        </div>
         </div>
     </section>
+    <!-- section 5 -->
+    <section class="read-more">
+        <div class="container-custom">
+            <div id='modal'>
+                <div class='close-icon' onclick="closeModal()"><svg viewBox="0 0 28 28"
+                        style="enable-background:new 0 0 28 28;" xml:space="preserve">
+                        <g>
+                            <path style="fill:#030104;"
+                                d="M0,24l4,4l10-10l10,10l4-4L18,14L28,4l-4-4L14,10L4,0L0,4l10,10L0,24z" />
+                        </g>
+                    </svg>
+                </div>
+                <div id='modal-content'></div>
+            </div>
+            <div class="read-more_main">
+                <div class="read-more_line">
+                    <div class="read-more__article">
+                        <h3>We Reach The Top</h3>
+                        <p>September 2014</p>
+                    </div>
+                    <div class="read-more__border">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="read-more__text">
+                        <h4>Kat is new brand</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, rebum dolore labores cu pri. Ferri iudico scripta ut eam,
+                            diceret
+                            euismod gubergren has eu, an quo tale vivendum. Ad quidam gubergren vituperatoribus sit. Ius
+                            etiam nemore consulatu ne, at meliore explicari conceptam qui. Agam ceteros forensibus.
+                        </p>
+                        <p class='read-mor-url' onclick="openModal(0)">Read more</p>
+                    </div>
+                </div>
+                <div class="read-more_line">
+                    <div class="read-more__article">
+                        <h3>Close To The Stars</h3>
+                        <p>May 2014</p>
+                    </div>
+                    <div class="read-more__border">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="read-more__text">
+                        <h4>Big thing are happening</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, rebum dolore labores cu pri. Ferri iudico scripta ut eam,
+                            diceret
+                            euismod gubergren has eu, an quo tale vivendum. Ad quidam gubergren vituperatoribus sit. Ius
+                            etiam nemore consulatu.
+                        </p>
+                        <p class='read-mor-url' onclick="openModal(1)">Read more</p>
+                    </div>
+                </div>
+                <div class="read-more_line">
+                    <div class="read-more__article">
+                        <h3>New Office</h3>
+                        <p>April 2014</p>
+                    </div>
+                    <div class="read-more__border">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="read-more__text">
+                        <h4>We are moving</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, rebum dolore labores cu pri. Ferri iudico scripta ut eam,
+                            diceret
+                            euismod gubergren has eu, an quo tale vivendum.
+                        </p>
+                        <p class='read-mor-url' onclick="openModal(2)">Read more</p>
+                    </div>
+                </div>
+                <div class="read-more_line">
+                    <div class="read-more__article">
+                        <h3>Ket Is Live</h3>
+                        <p>March 2014</p>
+                    </div>
+                    <div class="read-more__border">
+                        <span></span>
+                    </div>
+                    <div class="read-more__text">
+                        <h4>Just started and feel so alive</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, rebum dolore labores cu pri. Ferri iudico scripta ut eam,
+                            diceret
+                            euismod gubergren has eu, an quo tale vivendum. Ad quidam gubergren vituperatoribus sit. Ius
+                            etiam nemore consulatu ne, at meliore explicari conceptam qui. Agam ceteros forensibus vix
+                            eu,
+                            paulo ubique ex eam.
+                        </p>
+                        <p class='read-mor-url' onclick="openModal(3)">Read more</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section 6 -->
+    <section class="portfolio">
+        <div class="container-custom">
+            <div class="portfolio_main">
+        <h4>Our Portfolio</h4>
+        <p>
+            Eum cu tantas legere complectitur, hinc utamur ea eam. Eum patrioque mnesarchum eu, diam erant convenire et
+            vis. Et essent evertitur sea, vis cu ubique referrentur, sed eu dicant expetendis.
+        </p>
 
-<!-- section 4 -->
-<section class="wr-design">
+    </div>
+
+    </div>
+    </section>
+<!-- section 7 -->
+<section class="video">
     <div class="container-custom">
-        <div class="wr-design_main">
-<h3>Modern And Clean Design</h3>
-<p>Eum cu tantas legere complectitur, hinc utamur ea eam. Eum patrioque mnesarchum eu, diam erant convenire et vis. Et essent evertitur sea, vis cu ubique referrentur, sed eu dicant expetendis.</p>
+        <div class="video__main">
+    <h4>Nothing say better, than a video</h4>
+    <p>
+        Eum cu tantas legere complectitur, hinc utamur ea eam. Eum patrioque mnesarchum eu, diam erant convenire et
+        vis. Et essent evertitur sea, vis cu ubique referrentur, sed eu dicant expetendis.
+    </p>
 </div>
+<video src="./img/video_.mp4" autoplay="autoplay">
+    <!-- <source src="./img/video_.mp4" type="video/mp4"> -->
+        <!-- <source src="./img/video_.webm" type="video/webm"> -->
+    </video>
+
 
 </div>
 </section>
+<!-- section 8 -->
+<section class="wr-services">
+    <div class="container-custom">
+        <div class="wr-service__main">
+            <div class="wr-service__web">
+                <img src="./img/8-section/projects.png">
+                
+                <p>3054</p>
+                <h1>COMPLETED PROJECTS</h1>
+            </div>
+            <div class="wr-service__design">
+                <img src="./img/8-section/clicks.png">
+                <p>7243873</p>
+                <h1>CLICK PRESED</h1>
+            </div>
+            <div class="wr-service__programming">
+                <img src="./img/8-section/mails.png">
+                
+                <p>4670</p>
+                <h1>MAILS SENTED</h1>
+            </div>
+            <div class="wr-service__photography">
+                <img src="./img/8-section/jokes.png">
+                <p>939</p>
+                <h1>JOKES TOLDS</h1>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="slider">
+<div id="slider-photo__button" onclick="OnButtonClick('all')">ALL  
+</div>
+<div id="slider-photo__button" onclick="OnButtonClick('web')">WEB
+</div>
+<div id="slider-photo__button" onclick="OnButtonClick('photo')"> PHOTOGRAPHY
+</div>
+<div id="slider-photo__button" onclick="OnButtonClick('design')">GRAPHIC DESIGN
+</div>
+<div id="slider-photo">  
+
+</div>
+</div>
 
 
 
 
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
