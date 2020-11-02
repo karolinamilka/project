@@ -718,6 +718,166 @@ h2 {
   padding-top: 23px;
 }
 
+.we-are-the-one .container-custom {
+  width: 1170px;
+  margin: 0 auto;
+  padding-top: 88px;
+}
+.we-are-the-one h4::after {
+  content: "";
+  width: 167px;
+  color: #67e5fa;
+  display: block;
+  border: 1px solid #67e5fa;
+  position: relative;
+  top: 25px;
+  left: 220px;
+}
+.we-are-the-one .we-are-the-one__main {
+  width: 269px;
+}
+.we-are-the-one .we-are-the-one__main img {
+  width: 100%;
+  height: 35%;
+}
+.we-are-the-one .we-are-the-one__main .text {
+  background-color: #1c1d1e;
+}
+.we-are-the-one .we-are-the-one__main .text h5 {
+  text-align: center;
+  padding-top: 10px;
+  color: #06bad2;
+}
+.we-are-the-one .we-are-the-one__main .text p {
+  text-align: center;
+  width: 269px;
+  padding-top: 5px;
+  padding-bottom: 18px;
+  color: #c2c3c3;
+}
+.we-are-the-one .we-are-the-one__main p:nth-child(3) {
+  width: 268px;
+  text-align: center;
+  background-color: #f7f7f7;
+  padding-top: 33px;
+  padding-bottom: 32px;
+}
+.we-are-the-one h4 {
+  font-size: 40px;
+  text-align: center;
+  width: 610px;
+  margin: 0 auto;
+}
+.we-are-the-one p {
+  font-size: 13px;
+  text-align: center;
+  padding-top: 54px;
+  width: 770px;
+  margin: 0 auto;
+}
+.we-are-the-one h4,
+.we-are-the-one p {
+  font-family: "Raleway", serif;
+  color: #3f4244;
+}
+.we-are-the-one .we-are-the-one__icons {
+  width: 269px;
+  display: flex;
+  padding-top: 2px;
+}
+.we-are-the-one .we-are-the-one__icons li {
+  height: 57px;
+  background-color: #f7f7f7;
+}
+.we-are-the-one .we-are-the-one__icons li:hover:nth-child(1) {
+  cursor: pointer;
+  background-color: #36609e;
+}
+.we-are-the-one .we-are-the-one__icons li:hover:nth-child(1) svg {
+  cursor: pointer;
+  fill: #fff;
+}
+.we-are-the-one .we-are-the-one__icons li:hover:nth-child(3) {
+  cursor: pointer;
+  background-color: #db5442;
+}
+.we-are-the-one .we-are-the-one__icons li:hover:nth-child(3) svg {
+  cursor: pointer;
+  fill: #fff;
+}
+.we-are-the-one .we-are-the-one__icons li:hover:nth-child(2) {
+  cursor: pointer;
+  background-color: #041b4f;
+}
+.we-are-the-one .we-are-the-one__icons li:hover:nth-child(2) svg {
+  cursor: pointer;
+}
+.we-are-the-one .we-are-the-one__icons li:hover:nth-child(4) {
+  cursor: pointer;
+  background-color: #ab0198;
+}
+.we-are-the-one .we-are-the-one__icons li:hover:nth-child(4) svg {
+  cursor: pointer;
+}
+.we-are-the-one .we-are-the-one__icons svg {
+  width: 67px;
+  height: 25px;
+  padding-top: 16px;
+  fill: #444;
+}
+.we-are-the-one .we-are-the-one__icons ul {
+  display: flex;
+}
+.we-are-the-one .we-are-the-one__block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 93px;
+  padding-bottom: 56px;
+}
+
+.about-ket {
+  background-color: #f7f7f7;
+}
+.about-ket .container-custom {
+  padding-top: 93px;
+  display: grid;
+  grid-template-columns: 570px 555px;
+  grid-template-rows: 300px;
+  padding-bottom: 94px;
+}
+.about-ket img {
+  width: 100%;
+  height: 100%;
+}
+.about-ket .about-ket__main {
+  margin-left: 29px;
+  margin-right: -44px;
+  border: 1px solid #c8cdce;
+}
+.about-ket .about-ket__main h6, .about-ket .about-ket__main p {
+  font-family: "Raleway", serif;
+}
+.about-ket .about-ket__main h6 {
+  padding-top: 35px;
+  padding-left: 35px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.about-ket .about-ket__main p:nth-child(2) {
+  padding-left: 27px;
+  padding-top: 42px;
+  font-size: 13px;
+  padding-right: 32px;
+  line-height: 16px;
+}
+.about-ket .about-ket__main p:nth-child(3) {
+  padding-left: 27px;
+  padding-top: 15px;
+  font-size: 13px;
+  line-height: 16px;
+}
+
 .slider-photo,
 .slider-photo-div {
   float: left;
