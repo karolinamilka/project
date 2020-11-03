@@ -892,46 +892,43 @@ h2 {
     }
 
     .we-are-the-one__main {
-        width: 269px;
+        width: 23%;
 
         img {
-            // width: 269px;
-            // height: 139px;
             width: 100%;
-height: 35%;
+            height: 35%;
         }
 
         .text {
             background-color: #1c1d1e;
+            width: 100%;
+            height: 13%;
 
             h5 {
                 text-align: center;
                 padding-top: 10px;
                 color: #06bad2;
+                font-size: 20px;
+                font-weight: 500;
             }
 
             p {
                 text-align: center;
-                width: 269px;
+                width: 100%;
                 padding-top: 5px;
                 padding-bottom: 18px;
                 color: #c2c3c3;
             }
-
         }
 
         p:nth-child(3) {
-            width: 268px;
+            width: 100%;
             text-align: center;
             background-color: #f7f7f7;
             padding-top: 33px;
             padding-bottom: 32px;
         }
     }
-
-
-
-
 
     h4 {
         font-size: 40px;
@@ -951,12 +948,11 @@ height: 35%;
     h4,
     p {
         font-family: "Raleway", serif;
-
         color: #3f4244;
     }
 
     .we-are-the-one__icons {
-        width: 269px;
+        width: 100%;
         display: flex;
         padding-top: 2px;
 
@@ -974,14 +970,17 @@ height: 35%;
                 fill: #fff;
             }
         }
+
         li:hover:nth-child(3) {
             cursor: pointer;
             background-color: #db5442;
+
             svg {
                 cursor: pointer;
                 fill: #fff;
             }
         }
+
         li:hover:nth-child(2) {
             cursor: pointer;
             background-color: #041b4f;
@@ -990,6 +989,7 @@ height: 35%;
                 cursor: pointer;
             }
         }
+
         li:hover:nth-child(4) {
             cursor: pointer;
             background-color: #ab0198;
@@ -998,7 +998,6 @@ height: 35%;
                 cursor: pointer;
             }
         }
-        
 
         svg {
             width: 67px;
@@ -1011,62 +1010,413 @@ height: 35%;
             display: flex;
         }
     }
+
     .we-are-the-one__block {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         padding-top: 93px;
-padding-bottom: 56px;
+        padding-bottom: 56px;
     }
 }
+
 // section 10
 .about-ket {
     .container-custom {
         padding-top: 93px;
         display: grid;
-grid-template-columns: 570px 555px;
-grid-template-rows: 300px;
-padding-bottom: 94px;
+        grid-template-columns: 49% 47%;
+        grid-template-rows: min-content;
+        padding-bottom: 94px;
     }
+
     background-color: #f7f7f7;
+
     img {
         width: 100%;
         height: 100%;
     }
+
     .about-ket__main {
         margin-left: 29px;
-margin-right: -44px;
+        margin-right: -44px;
         border: 1px solid #c8cdce;
-        h6 , p {
-            font-family: "Raleway" , serif;
+
+        h6,
+        p {
+            font-family: "Raleway", serif;
         }
+
         h6 {
             padding-top: 35px;
-padding-left: 35px;
-font-size: 20px;
-font-weight: 500;
+            padding-left: 35px;
+            font-size: 20px;
+            font-weight: 500;
         }
+
         p:nth-child(2) {
             padding-left: 27px;
-padding-top: 42px;
-font-size: 13px;
-padding-right: 32px;
-line-height: 16px;
+            padding-top: 42px;
+            font-size: 13px;
+            padding-right: 32px;
+            line-height: 16px;
         }
+
         p:nth-child(3) {
             padding-left: 27px;
             padding-top: 15px;
             font-size: 13px;
             line-height: 16px;
-        }
+            padding-bottom: 42px;
         }
     }
-    
+}
 
+// section 11
+.little-slider {
+    .container-custom {
+        svg {
+            width: 3%;
+            padding-left: 49%;
+        }
 
+        padding-top: 98px;
+        padding-bottom: 177px;
+    }
 
+    background-color: #252726;
 
+    h1 {
+        font-family: "Raleway", serif;
+        font-size: 20px;
+        color: #fff;
+        text-align: center;
+    }
 
+    p {
+        font-family: "Raleway", serif;
+        font-size: 13px;
+        color: #fff;
+        text-align: center;
+        padding-top: 17px;
+    }
+}
+
+// section 12
+.our-news {
+    background-color: #fff;
+
+    .container-custom {
+        width: 49%;
+    }
+
+    h3,
+    p {
+        font-family: "Raleway", serif;
+    }
+
+    .our-news__header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: -81px;
+        margin-left: 5px;
+        padding-top: 85px;
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    h3 {
+        font-size: 40px;
+        color: #3f4244;
+    }
+
+    .our-news__header-text {
+        text-align: center;
+        width: 100%;
+        padding-left: 3px;
+        padding-top: 54px;
+        font-size: 13px;
+        line-height: 16px;
+        color: #b3b9bc;
+    }
+
+    h3::after {
+        content: "";
+        width: 171px;
+        color: #00e1ff;
+        display: block;
+        border: 1px solid rgb(103, 229, 250);
+        position: relative;
+        top: 26px;
+        left: 77px;
+    }
+
+    .read-mor-url::after {
+        content: "";
+        width: 98%;
+        color: #edf2f6;
+        display: block;
+        border: 1px solid #edf2f6;
+        position: relative;
+        top: 16px;
+        left: 14px;
+    }
+
+    .our-news__main:nth-child(2) {
+        padding-top: 85px;
+        width: 90%;
+        margin: 0 auto;
+
+        .our-news__date {
+            p:last-child {
+                color: #b3b9bc;
+                text-align: center;
+                padding-top: 15px;
+            }
+        }
+
+        display: grid;
+        grid-template-columns: 10% 90%;
+        grid-template-rows: 100%;
+
+        h2 {
+            color: #55ebff;
+            font-weight: 400;
+        }
+
+        .our-news__text {
+            padding-left: 25px;
+            padding-top: 23px;
+
+            p:first-child {
+                color: #b3b9bc;
+                font-size: 13px;
+                padding-left: 4px;
+            }
+        }
+
+        .read-mor-url {
+            text-align: right;
+            color: #55ebff;
+            padding-top: 47px;
+            padding-right: 30px;
+            font-size: 13px;
+        }
+
+        .read-mor-url:hover {
+            cursor: pointer;
+        }
+    }
+
+    .our-news__main:nth-child(3),
+    .our-news__main:nth-child(4) {
+        padding-top: 38px;
+
+        .our-news__date {
+            p:last-child {
+                color: #b3b9bc;
+                text-align: center;
+                padding-top: 15px;
+            }
+        }
+
+        display: grid;
+        grid-template-columns: 10% 90%;
+        grid-template-rows: 100%;
+        width: 90%;
+        margin: 0 auto;
+
+        h2 {
+            color: #55ebff;
+            font-weight: 400;
+        }
+
+        .our-news__text {
+            padding-left: 25px;
+            padding-top: 23px;
+
+            p:first-child {
+                color: #b3b9bc;
+                font-size: 13px;
+                padding-left: 4px;
+            }
+        }
+
+        .read-mor-url {
+            text-align: right;
+            color: #55ebff;
+            padding-top: 47px;
+            padding-right: 30px;
+            font-size: 13px;
+        }
+
+        .read-mor-url:hover {
+            cursor: pointer;
+        }
+    }
+
+    .our-news__main:nth-child(5) {
+        padding-top: 38px;
+        width: 90%;
+        margin: 0 auto;
+
+        padding-bottom: 102px;
+
+        .our-news__date {
+            p:last-child {
+                color: #b3b9bc;
+                text-align: center;
+                padding-top: 15px;
+            }
+        }
+
+        display: grid;
+        grid-template-columns: 10% 90%;
+        grid-template-rows: 100%;
+
+        h2 {
+            color: #55ebff;
+            font-weight: 400;
+        }
+
+        .our-news__text {
+            padding-left: 25px;
+            padding-top: 23px;
+
+            p:first-child {
+                color: #b3b9bc;
+                font-size: 13px;
+                padding-left: 4px;
+            }
+        }
+
+        .read-mor-url {
+            text-align: right;
+            color: #55ebff;
+            padding-top: 47px;
+            padding-right: 30px;
+            font-size: 13px;
+        }
+
+        .read-mor-url:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+// section 13
+.modern-design {
+    background-image: url(../img/claudio-schwarz-purzlbaum-dMi8LcYRCIE-unsplash.jpg);
+    background-size: cover;
+    background-position: bottom;
+    padding: 269px 0 191px;
+.modern-design__block {
+    display: flex;
+    img {
+        width: 100%;
+    }
+}
+    .modern-design__main {
+        position: relative;
+        top: 17%;
+        right: 21%;
+        h6,
+        p {
+            font-family: "Raleway", serif;
+            color: #fff;
+        }
+
+        h6 {
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 13px;
+        }
+    }
+}
+
+// section 14
+.what-clients-say {
+    .container-custom {
+        padding-top: 85px;
+        padding-bottom: 94px;
+    }
+
+    h4::after {
+        content: "";
+        width: 167px;
+        color: #67e5fa;
+        display: block;
+        border: 1px solid #67e5fa;
+        top: 65px;
+        left: 220px;
+        position: absolute;
+    }
+
+    .what-clients-say__header {
+
+        h4 {
+            font-size: 40px;
+            color: #727476;
+            text-align: center;
+            width: 610px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        p {
+            font-size: 13px;
+            color: #929ba0;
+            text-align: center;
+            padding-top: 54px;
+            width: 770px;
+            margin: 0 auto;
+        }
+
+        h4,
+        p {
+            font-family: "Raleway", serif;
+        }
+    }
+
+    .what-clients-say__main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .what-clients-say__block {
+        border: 1px solid gray;
+        width: 31%;
+        margin-top: 97px;
+
+        h5 {
+            text-align: center;
+            padding-top: 40px;
+            font-size: 20px;
+            color: #3f4244;
+        }
+
+        p:nth-child(2) {
+            text-align: center;
+            padding-top: 13px;
+            font-size: 13px;
+            color: #00e1ff;
+        }
+
+        p:last-child {
+            text-align: center;
+            font-size: 13px;
+            padding-top: 30px;
+            width: 80%;
+            margin: 0 auto;
+            padding-bottom: 60px;
+            color: #c2c7c9;
+        }
+    }
+}
 
 
 
