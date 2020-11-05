@@ -1,5 +1,9 @@
 window.onload = function () {
+	
+	OnButtonClick('all');
+	
     var header1 = document.getElementById("tabHeader_1");
+	header1.setAttribute("class", "tabActiveHeader");
     var header2 = document.getElementById("tabHeader_2");
     header1.onclick = onHeader1Click;
     header2.onclick = onHeader2Click;
@@ -60,7 +64,7 @@ function OnButtonClick (type) {
         {
             src: ['./img/slider.jpg', './img/slider.jpg' , './img/slider.jpg' , './img/slider.jpg' , './img/slider.jpg'],
             type: 'web',
-            text: 'vfhfvhjfhgfh'
+            text: ';oiuo88558i'
         },
         {
             src: ['./img/slider.jpg', './img/slider.jpg' , './img/slider.jpg' , './img/slider.jpg' , './img/slider.jpg'],
@@ -70,11 +74,11 @@ function OnButtonClick (type) {
         {
             src: ['./img/slider.jpg', './img/slider.jpg' , './img/slider.jpg' , './img/slider.jpg' , './img/slider.jpg'],
             type: 'design',
-            text: 'vfhfvhjfhgfh'
+            text: 'dshdjdj'
         }
     ]
     var sliderPhoto = document.getElementById("slider-photo");
-    // document.getElementById("slider-photo") = '<div class="slider-photo"></div>'
+    document.getElementById("slider-photo").innerHTML = ''
     for (i=0; i<sliderData.length; i++) {
         if (sliderData[i].type === type) {
             for (x=0; x<sliderData[i].src.length; x++) {

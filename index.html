@@ -13,122 +13,115 @@
     <!-- header -->
     <header>
         <div class="container-custom">
-            <div class="header">
-                <div class="header_logo"> <a href="./index.html"><img class="header__logo" src="./img/logo.png"></a>
-                </div>
-                <div class="header_links">
-                    <nav class="header_nav">
-                        <ul>
-                            <li class="header__li-1"><a href="#">home</a></li>
-                            <li class="header__li-2"><a href="#">services</a></li>
-                            <li class="header__li-3"><a href="#">portfolio</a></li>
-                            <li class="header__li-4"><a href="#">about</a></li>
-                            <li class="header__li-5"><a href="#">news</a></li>
-                            <li class="header__li-6"><a href="#">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
+            <!-- <div class="header__logo"> -->
+            <a href="./index.html"><img class="header__logo" src="./img/logo.png"></a>
+            <!-- </div> -->
+            <nav class="header__nav">
+                <ul>
+                    <li class="header__li-1"><a href="#">home</a></li>
+                    <li class="header__li-2"><a href="#">services</a></li>
+                    <li class="header__li-3"><a href="#">portfolio</a></li>
+                    <li class="header__li-4"><a href="#">about</a></li>
+                    <li class="header__li-5"><a href="#">news</a></li>
+                    <li class="header__li-6"><a href="#">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
     <!-- section 1 -->
     <section class="wr-home">
         <div class="container-custom">
-            <div class="wr-home_main">
-                <h2>WE MAKE WEBSITES</h2>
-                <button>START TOUR</button>
-            </div>
+            <h2>WE MAKE WEBSITES</h2>
+            <button>START TOUR</button>
         </div>
         </div>
     </section>
     <!-- section 2 -->
     <section class="wr-service">
         <div class="container-custom">
-            <div class="wr-service_main">
-                <div class="wr-service_web">
+            <div class="wr-service__web">
+                <div class="wr-service__img">
                     <img src="./img/service/web.png">
-                    <h1>WEB DESIGN</h1>
-                    <p>Eum cu tantas legere complectitur</p>
                 </div>
-                <div class="wr-service_design">
+                <h1>WEB DESIGN</h1>
+                <p>Eum cu tantas legere complectitur</p>
+            </div>
+            <div class="wr-service__design">
+                <div class="wr-service__img">
                     <img src="./img/service/graphic.png">
-                    <h1>GRAPHIC DESIGN</h1>
                 </div>
-                <div class="wr-service_programming">
+                <h1>GRAPHIC DESIGN</h1>
+            </div>
+            <div class="wr-service__design">
+                <div class="wr-service__img">
                     <img src="./img/service/programming.png">
-                    <h1>PROGRAMMING</h1>
-                    <p>Eum cu tantas legere complectitur, hinc utamur ea eam</p>
                 </div>
-                <div class="wr-service_photography">
+                <h1>PROGRAMMING</h1>
+                <p>Eum cu tantas legere complectitur, hinc utamur ea eam</p>
+            </div>
+            <div class="wr-service__web">
+                <div class="wr-service__img">
                     <img src="./img/service/photo.png">
-                    <h1>PHOTOGRAPHY</h1>
-                    <p>Eum cu tantas legere complectitur, hinc utamur ea eam</p>
                 </div>
+                <h1>PHOTOGRAPHY</h1>
+                <p>Eum cu tantas legere complectitur, hinc utamur ea eam</p>
             </div>
         </div>
     </section>
     <!-- section 3 -->
     <section class="responsive">
         <div class="container-custom">
-            <div id="wrapper">
-                <div id="tabContainer">
-                    <div id="tabs">
-                        <ul>
-                            <li id="tabHeader_1">START TOUR</li>
-                            <li id="tabHeader_2">FOR ALL DEVICES</li>
-                        </ul>
-                    </div>
-                    <div id="tabscontent">
-                        <div class="tabpage" id="tabpage_1">
+            <!-- <div id="wrapper"> -->
+            <div id="responsive__tab-container">
+                <div id="tabs" class="responsive__tabs">
+                    <button id="tabHeader_1">START TOUR</button>
+                    <button id="tabHeader_2">FOR ALL DEVICES</button>
+                </div>
+                <div id="tabscontent" class="responsive__content">
+                    <div class="tabpage" id="tabpage_1">
+                        <div class="responsive__img">
                             <img class="responsive__img" src="./img/phone.png" alt="phones">
-                            <!-- srcset="./img/Phones@2x.png 2x" -->
-                            <div class="responsive__main">
-                                <h1 class="responsive__headline">Fully Responsive</h1>
-                                <p class="responsive__subtext">Eum cu tantas legere complectitur, hinc utamur ea eam.
-                                    Lorem ipsum dolor sit amet, volumus temporibus definitionem id ius, vel ut magna
-                                    timeam appareat, movet timeam maiorum an ius.</p>
-                                <p class="responsive__subtext">Sea libris dictas lucilius et. Ne cibo urbanitas pri, qui
-                                    ad populo accusamus. Quod congue ea ius, nisl aperiri sit ut.</p>
-                                <button class="responsive__btn">START TOUR</button>
-                            </div>
                         </div>
-                        <div class="tabpage hidden" id="tabpage_2">
+                        <!-- srcset="./img/Phones@2x.png 2x" -->
+                        <div class="responsive__main">
+                            <h1 class="responsive__headline">Fully Responsive</h1>
+                            <p class="responsive__subtext">Eum cu tantas legere complectitur, hinc utamur ea eam.
+                                Lorem ipsum dolor sit amet, volumus temporibus definitionem id ius, vel ut magna
+                                timeam appareat, movet timeam maiorum an ius.</p>
+                            <p class="responsive__subtext">Sea libris dictas lucilius et. Ne cibo urbanitas pri, qui
+                                ad populo accusamus. Quod congue ea ius, nisl aperiri sit ut.</p>
+                            <button class="responsive__btn">START TOUR</button>
+                        </div>
+                    </div>
+                    <div class="tabpage hidden" id="tabpage_2">
+                        <div class="responsive__img">
                             <img class="responsive__img" src="./img/phone.png" alt="phones">
-                            <!-- srcset="./img/Phones@2x.png 2x" -->
-                            <div class="responsive__main">
-                                <h1 class="responsive__headline">Fully Responsive</h1>
-                                <p class="responsive__subtext">Eum cu tantas legere complectitur, hinc utamur ea eam.
-                                    Lorem ipsum dolor sit amet, volumus temporibus definitionem id ius, vel ut magna
-                                    timeam appareat, movet timeam maiorum an ius.</p>
-                                <p class="responsive__subtext">Sea libris dictas lucilius et. Ne cibo urbanitas pri, qui
-                                    ad populo accusamus. Quod congue ea ius, nisl aperiri sit ut.</p>
-                                <button class="responsive__btn">START TOUR</button>
-                            </div>
+                        </div>
+                        <!-- srcset="./img/Phones@2x.png 2x" -->
+                        <div class="responsive__main">
+                            <h1 class="responsive__headline">Fully Responsive</h1>
+                            <p class="responsive__subtext">Eum cu tantas legere complectitur, hinc utamur ea eam.
+                                Lorem ipsum dolor sit amet, volumus temporibus definitionem id ius, vel ut magna
+                                timeam appareat, movet timeam maiorum an ius.</p>
+                            <p class="responsive__subtext">Sea libris dictas lucilius et. Ne cibo urbanitas pri, qui
+                                ad populo accusamus. Quod congue ea ius, nisl aperiri sit ut.</p>
+                            <button class="responsive__btn">START TOUR</button>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
     </section>
     <!-- section 4 -->
     <section class="wr-design">
         <div class="container-custom">
-            <div class="wr-design_main">
+            <div class="wr-design__main">
                 <h3>Modern And Clean Design</h3>
                 <p>Eum cu tantas legere complectitur, hinc utamur ea eam. Eum patrioque mnesarchum eu, diam erant
                     convenire et vis. Et essent evertitur sea, vis cu ubique referrentur, sed eu dicant expetendis.</p>
             </div>
             <div class="wr-design__img">
-                <ul class="accordion">
-                    <li>
-                        <img src="./img/screenDO.png" alt="left screen">
-                    </li>
-                    <li>
-                        <img src="./img/screenDO.png" alt="middle-screen">
-                    </li>
-                    <li>
-                        <img src="./img/screenDO.png" alt="right-screen">
-                    </li>
-                </ul>
+                        <img src="./img/Screens-3.png" alt="left screen">
             </div>
         </div>
     </section>
@@ -256,7 +249,7 @@
                     vis. Et essent evertitur sea, vis cu ubique referrentur, sed eu dicant expetendis.
                 </p>
             </div>
-            <video src="./img/video_.mp4" autoplay="autoplay">
+            <video src="./img/video_.mp4" type="video/mp4" autoplay="autoplay">
                 <!-- <source src="./img/video_.mp4" type="video/mp4"> -->
                 <!-- <source src="./img/video_.webm" type="video/webm"> -->
             </video>
@@ -835,7 +828,7 @@
 
         </div>
     </div>
-
+    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2354.410520865248!2d27.57231640526729!3d53.8355620112215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbd199345e4f4b%3A0xca1fd4894f041f65!2z0YPQu9C40YbQsCDQn9GA0YPRiNC40L3RgdC60LjRhSwg0JzQuNC90YHQug!5e0!3m2!1sru!2sby!4v1604509945907!5m2!1sru!2sby" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
 
 
 
