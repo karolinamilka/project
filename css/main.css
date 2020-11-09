@@ -35,6 +35,21 @@ body a {
   text-decoration: none;
 }
 
+h4 {
+  font-size: 40px;
+}
+
+h4::after {
+  content: "";
+  width: 171px;
+  color: #00e1ff;
+  display: block;
+  border: 2px solid #67e5fa;
+  position: relative;
+  top: 26px;
+  margin: 0 auto;
+}
+
 header {
   padding: 17px 0;
 }
@@ -205,7 +220,8 @@ h2 {
   width: 100%;
 }
 
-.wr-service__design h1 {
+.wr-service__web:nth-child(2) h1,
+.wr-service__web:nth-child(3) h1 {
   padding-top: 47px;
 }
 
@@ -217,7 +233,8 @@ h2 {
   width: 23%;
 }
 
-.wr-service__web h1 {
+.wr-service__web:nth-child(1) h1,
+.wr-service__web:nth-child(4) h1 {
   padding-top: 54px;
 }
 
@@ -227,6 +244,8 @@ h2 {
 }
 .responsive img {
   width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 .responsive .hidden button {
   box-shadow: 1px 5px 15px #36c5fa;
@@ -237,6 +256,7 @@ h2 {
 
 .responsive__main {
   padding-left: 110px;
+  align-self: flex-start;
 }
 .responsive__main button {
   font-family: "Raleway";
@@ -260,11 +280,13 @@ h2 {
 }
 
 .responsive__img {
-  width: 645px;
+  width: 40%;
+  flex-shrink: 0;
 }
 
 .responsive__content {
   padding-top: 85px;
+  padding-left: 146px;
 }
 
 .responsive__tabs {
@@ -307,6 +329,7 @@ h2 {
   background-color: #f7f7f7;
   margin: 0 auto;
   display: flex;
+  align-items: flex-end;
 }
 
 .wr-design {
@@ -315,28 +338,15 @@ h2 {
   background-position: center;
   padding: 98px 0 0;
 }
-.wr-design h3,
+.wr-design h4,
 .wr-design p {
   color: #fff;
-}
-.wr-design h3 {
-  font-size: 40px;
 }
 .wr-design p {
   text-align: center;
   font-size: 13px;
   padding-top: 50px;
   padding-bottom: 123px;
-}
-.wr-design h3::after {
-  content: "";
-  width: 171px;
-  color: #00e1ff;
-  display: block;
-  border: 2px solid #67e5fa;
-  position: relative;
-  top: 26px;
-  margin: 0 auto;
 }
 
 .wr-design__main {
@@ -359,15 +369,15 @@ h2 {
 .read-more {
   background-color: #fff;
   padding-bottom: 95px;
-  padding-top: 120px;
 }
-.read-more .read-more_main {
+.read-more .read-more__main {
+  padding-top: 120px;
   margin: 0 auto;
   width: 61%;
   display: flex;
   flex-direction: column;
 }
-.read-more .read-more_main .read-more_line {
+.read-more .read-more__main .read-more__line {
   display: flex;
 }
 .read-more .close-icon svg {
@@ -403,11 +413,11 @@ h2 {
   text-align: center;
   position: relative;
 }
-.read-more .read-more_line {
+.read-more .read-more__line {
   display: flex;
   width: 100%;
 }
-.read-more .read-more_line span:nth-child(1) {
+.read-more .read-more__line span:nth-child(1) {
   border-radius: 50%;
   border: 2px solid #00e1ff;
   width: 8px;
@@ -417,7 +427,7 @@ h2 {
   position: absolute;
   left: 40%;
 }
-.read-more .read-more_line span:nth-child(2) {
+.read-more .read-more__line span:nth-child(2) {
   height: 100%;
   display: inline-block;
   border-left: 1px solid #c3d0d8;
@@ -425,15 +435,15 @@ h2 {
   top: 6%;
   right: 55%;
 }
-.read-more .read-more_line:nth-child(1) span:nth-child(2) {
+.read-more .read-more__line:nth-child(1) span:nth-child(2) {
   height: 95%;
   top: 6%;
 }
-.read-more .read-more_line:nth-child(2) span:nth-child(2) {
+.read-more .read-more__line:nth-child(2) span:nth-child(2) {
   height: 95%;
   top: 6%;
 }
-.read-more .read-more_line:nth-child(3) span:nth-child(2) {
+.read-more .read-more__line:nth-child(3) span:nth-child(2) {
   height: 92%;
   top: 8%;
 }
@@ -441,9 +451,10 @@ h2 {
   padding-bottom: 50px;
   width: 108%;
 }
-.read-more .read-more__text h4 {
+.read-more .read-more__text h2 {
   font-size: 17px;
   color: #8c8e8f;
+  font-weight: 400;
 }
 .read-more .read-more__text p {
   padding-top: 24px;
@@ -479,7 +490,6 @@ h2 {
   background-color: #f7f7f7;
 }
 .portfolio h4 {
-  font-size: 40px;
   color: #3f4244;
   text-align: center;
 }
@@ -488,20 +498,6 @@ h2 {
   color: #666666;
   text-align: center;
   padding-top: 54px;
-}
-.portfolio h4,
-.portfolio p {
-  font-family: "Raleway", serif;
-}
-.portfolio h4::after {
-  content: "";
-  width: 167px;
-  color: #67e5fa;
-  display: block;
-  border: 1px solid #67e5fa;
-  position: relative;
-  top: 25px;
-  left: 300px;
 }
 .portfolio .portfolio_main {
   width: 770px;
@@ -520,27 +516,7 @@ h2 {
 .video .container-custom {
   width: 770px;
   margin: 0 auto;
-  padding-top: 88px;
-}
-.video h4::after {
-  content: "";
-  width: 167px;
-  color: #67e5fa;
-  display: block;
-  border: 1px solid #67e5fa;
-  position: relative;
-  top: 25px;
-  left: 220px;
-}
-.video .video__main {
-  background: rgba(0, 0, 0, 0.6);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 71%;
-  z-index: 4;
-  padding-top: 10%;
+  padding-bottom: 95px;
 }
 .video video {
   position: absolute;
@@ -551,7 +527,6 @@ h2 {
   object-fit: cover;
 }
 .video h4 {
-  font-size: 40px;
   color: #fff;
   text-align: center;
   width: 610px;
@@ -565,27 +540,21 @@ h2 {
   width: 770px;
   margin: 0 auto;
 }
-.video h4,
-.video p {
-  font-family: "Raleway", serif;
+
+.video__main {
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+  padding-top: 10%;
 }
 
 .wr-services {
   background-color: #131316;
   padding-bottom: 82px;
-}
-.wr-services .wr-service__web,
-.wr-services .wr-service__design,
-.wr-services .wr-service__programming,
-.wr-services .wr-service__photography {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 23%;
-}
-.wr-services .wr-service__main {
-  display: flex;
-  justify-content: space-around;
   padding-top: 90px;
 }
 .wr-services p {
@@ -601,162 +570,184 @@ h2 {
   font-weight: 500;
   color: #f4f4f4;
 }
-.wr-services .wr-service__web h1 {
-  padding-top: 25px;
-}
-.wr-services .wr-service__design p {
-  padding-top: 44px;
-}
-.wr-services .wr-service__design img {
-  margin-top: -13px;
-}
-.wr-services .wr-service__design h1 {
-  padding-top: 22px;
-}
-.wr-services .wr-service__programming p {
-  padding-top: 39px;
-}
-.wr-services .wr-service__programming h1 {
-  padding-top: 21px;
-}
-.wr-services .wr-service__photography p {
-  padding-top: 42px;
-}
-.wr-services .wr-service__photography h1 {
-  padding-top: 23px;
+
+.wr-services__main {
+  display: flex;
+  justify-content: space-around;
 }
 
-.we-are-the-one .container-custom {
-  width: 1170px;
-  margin: 0 auto;
-  padding-top: 88px;
-}
-.we-are-the-one h4::after {
-  content: "";
-  width: 167px;
-  color: #67e5fa;
-  display: block;
-  border: 1px solid #67e5fa;
-  position: relative;
-  top: 25px;
-  left: 220px;
-}
-.we-are-the-one .we-are-the-one__main {
+.wr-services__web {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 23%;
 }
-.we-are-the-one .we-are-the-one__main img {
+
+.wr-services__web:nth-child(1) h1 {
+  padding-top: 25px;
+}
+.wr-services__web:nth-child(1) img {
+  width: 23%;
+}
+
+.wr-services__web:nth-child(2) p {
+  padding-top: 44px;
+}
+.wr-services__web:nth-child(2) img {
+  margin-top: -13px;
+  width: 13%;
+}
+.wr-services__web:nth-child(2) h1 {
+  padding-top: 22px;
+}
+
+.wr-services__web:nth-child(3) p {
+  padding-top: 39px;
+}
+.wr-services__web:nth-child(3) h1 {
+  padding-top: 21px;
+}
+.wr-services__web:nth-child(3) img {
+  width: 22%;
+}
+
+.wr-services__web:nth-child(4) p {
+  padding-top: 42px;
+}
+.wr-services__web:nth-child(4) h1 {
+  padding-top: 23px;
+}
+.wr-services__web:nth-child(4) img {
+  width: 23%;
+}
+
+.we-are-the-one {
+  padding-top: 88px;
+  padding-bottom: 56px;
+}
+.we-are-the-one h4 {
+  text-align: center;
+}
+.we-are-the-one p {
+  font-size: 13px;
+  text-align: center;
+  padding-top: 54px;
+  width: 65%;
+  margin: 0 auto;
+}
+.we-are-the-one h4,
+.we-are-the-one p {
+  color: #3f4244;
+}
+
+.we-are-the-one__main {
+  width: 23%;
+}
+.we-are-the-one__main img {
   width: 100%;
   height: 35%;
 }
-.we-are-the-one .we-are-the-one__main .text {
+.we-are-the-one__main .we-are-the-one__header-block {
   background-color: #1c1d1e;
   width: 100%;
   height: 13%;
 }
-.we-are-the-one .we-are-the-one__main .text h5 {
+.we-are-the-one__main .we-are-the-one__header-block h5 {
   text-align: center;
   padding-top: 10px;
   color: #06bad2;
   font-size: 20px;
   font-weight: 500;
 }
-.we-are-the-one .we-are-the-one__main .text p {
+.we-are-the-one__main .we-are-the-one__header-block p {
   text-align: center;
   width: 100%;
   padding-top: 5px;
   padding-bottom: 18px;
   color: #c2c3c3;
 }
-.we-are-the-one .we-are-the-one__main p:nth-child(3) {
+.we-are-the-one__main .we-are-the-one__main-text {
   width: 100%;
-  text-align: center;
   background-color: #f7f7f7;
+}
+.we-are-the-one__main .we-are-the-one__main-text p {
   padding-top: 33px;
   padding-bottom: 32px;
-}
-.we-are-the-one h4 {
-  font-size: 40px;
   text-align: center;
-  width: 610px;
-  margin: 0 auto;
+  width: 80%;
 }
-.we-are-the-one p {
-  font-size: 13px;
-  text-align: center;
-  padding-top: 54px;
-  width: 770px;
-  margin: 0 auto;
-}
-.we-are-the-one h4,
-.we-are-the-one p {
-  font-family: "Raleway", serif;
-  color: #3f4244;
-}
-.we-are-the-one .we-are-the-one__icons {
-  width: 100%;
-  display: flex;
-  padding-top: 2px;
-}
-.we-are-the-one .we-are-the-one__icons li {
-  height: 57px;
-  background-color: #f7f7f7;
-}
-.we-are-the-one .we-are-the-one__icons li:hover:nth-child(1) {
-  cursor: pointer;
-  background-color: #36609e;
-}
-.we-are-the-one .we-are-the-one__icons li:hover:nth-child(1) svg {
-  cursor: pointer;
-  fill: #fff;
-}
-.we-are-the-one .we-are-the-one__icons li:hover:nth-child(3) {
-  cursor: pointer;
-  background-color: #db5442;
-}
-.we-are-the-one .we-are-the-one__icons li:hover:nth-child(3) svg {
-  cursor: pointer;
-  fill: #fff;
-}
-.we-are-the-one .we-are-the-one__icons li:hover:nth-child(2) {
-  cursor: pointer;
-  background-color: #041b4f;
-}
-.we-are-the-one .we-are-the-one__icons li:hover:nth-child(2) svg {
-  cursor: pointer;
-}
-.we-are-the-one .we-are-the-one__icons li:hover:nth-child(4) {
-  cursor: pointer;
-  background-color: #ab0198;
-}
-.we-are-the-one .we-are-the-one__icons li:hover:nth-child(4) svg {
-  cursor: pointer;
-}
-.we-are-the-one .we-are-the-one__icons svg {
-  width: 67px;
-  height: 25px;
-  padding-top: 16px;
-  fill: #444;
-}
-.we-are-the-one .we-are-the-one__icons ul {
-  display: flex;
-}
-.we-are-the-one .we-are-the-one__block {
+
+.we-are-the-one__block {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding-top: 93px;
-  padding-bottom: 56px;
+}
+
+.we-are-the-one__icons {
+  width: 100%;
+  display: flex;
+  padding-top: 2px;
+}
+.we-are-the-one__icons li {
+  height: 57px;
+  background-color: #f7f7f7;
+  width: 24%;
+}
+.we-are-the-one__icons li:hover:nth-child(1) {
+  cursor: pointer;
+  background-color: #36609e;
+}
+.we-are-the-one__icons li:hover:nth-child(1) svg {
+  cursor: pointer;
+  fill: #fff;
+}
+.we-are-the-one__icons li:hover:nth-child(3) {
+  cursor: pointer;
+  background-color: #db5442;
+}
+.we-are-the-one__icons li:hover:nth-child(3) svg {
+  cursor: pointer;
+  fill: #fff;
+}
+.we-are-the-one__icons li:hover:nth-child(2) {
+  cursor: pointer;
+  background-color: #041b4f;
+}
+.we-are-the-one__icons li:hover:nth-child(2) svg {
+  cursor: pointer;
+  fill: #fff;
+}
+.we-are-the-one__icons li:hover:nth-child(4) {
+  cursor: pointer;
+  background-color: #ee558e;
+}
+.we-are-the-one__icons li:hover:nth-child(4) svg {
+  cursor: pointer;
+  fill: #fff;
+}
+.we-are-the-one__icons svg {
+  width: 67px;
+  height: 40px;
+  padding-top: 16px;
+  fill: #444;
+}
+.we-are-the-one__icons ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .about-ket {
+  padding-top: 93px;
+  padding-bottom: 94px;
   background-color: #f7f7f7;
 }
 .about-ket .container-custom {
-  padding-top: 93px;
   display: grid;
   grid-template-columns: 49% 47%;
   grid-template-rows: min-content;
-  padding-bottom: 94px;
 }
 .about-ket img {
   width: 100%;
@@ -823,10 +814,6 @@ h2 {
 .our-news .container-custom {
   width: 49%;
 }
-.our-news h3,
-.our-news p {
-  font-family: "Raleway", serif;
-}
 .our-news .our-news__header {
   display: flex;
   flex-direction: column;
@@ -837,8 +824,7 @@ h2 {
   width: 85%;
   margin: 0 auto;
 }
-.our-news h3 {
-  font-size: 40px;
+.our-news h4 {
   color: #3f4244;
 }
 .our-news .our-news__header-text {
@@ -849,16 +835,6 @@ h2 {
   font-size: 13px;
   line-height: 16px;
   color: #b3b9bc;
-}
-.our-news h3::after {
-  content: "";
-  width: 171px;
-  color: #00e1ff;
-  display: block;
-  border: 1px solid #67e5fa;
-  position: relative;
-  top: 26px;
-  left: 77px;
 }
 .our-news .read-mor-url::after {
   content: "";
@@ -988,7 +964,7 @@ h2 {
 }
 
 .modern-design {
-  background-image: url(../img/claudio-schwarz-purzlbaum-dMi8LcYRCIE-unsplash.jpg);
+  background-image: url(../img/background-design.jpg);
   background-size: cover;
   background-position: bottom;
   padding: 139px 0 0px;
@@ -1024,63 +1000,51 @@ h2 {
   padding-top: 50px;
 }
 
-.what-clients-say .container-custom {
+.what-clients-say {
   padding-top: 85px;
   padding-bottom: 94px;
 }
-.what-clients-say h4::after {
-  content: "";
-  width: 167px;
-  color: #67e5fa;
-  display: block;
-  border: 1px solid #67e5fa;
-  top: 65px;
-  left: 220px;
-  position: absolute;
+
+.what-clients-say__header {
+  width: 65%;
+  margin: 0 auto;
 }
-.what-clients-say .what-clients-say__header h4 {
-  font-size: 40px;
+.what-clients-say__header h4 {
   color: #727476;
   text-align: center;
-  width: 610px;
-  margin: 0 auto;
   position: relative;
 }
-.what-clients-say .what-clients-say__header p {
+.what-clients-say__header p {
   font-size: 13px;
   color: #929ba0;
   text-align: center;
   padding-top: 54px;
-  width: 770px;
-  margin: 0 auto;
 }
-.what-clients-say .what-clients-say__header h4,
-.what-clients-say .what-clients-say__header p {
-  font-family: "Raleway", serif;
-}
-.what-clients-say .what-clients-say__main {
+
+.what-clients-say__main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.what-clients-say .what-clients-say__block {
+
+.what-clients-say__block {
   border: 1px solid gray;
   width: 31%;
   margin-top: 97px;
 }
-.what-clients-say .what-clients-say__block h5 {
+.what-clients-say__block h5 {
   text-align: center;
   padding-top: 40px;
   font-size: 20px;
   color: #3f4244;
 }
-.what-clients-say .what-clients-say__block p:nth-child(2) {
+.what-clients-say__block p:nth-child(2) {
   text-align: center;
   padding-top: 13px;
   font-size: 13px;
   color: #00e1ff;
 }
-.what-clients-say .what-clients-say__block p:last-child {
+.what-clients-say__block p:last-child {
   text-align: center;
   font-size: 13px;
   padding-top: 30px;
