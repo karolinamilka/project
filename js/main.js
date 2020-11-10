@@ -1,9 +1,9 @@
 window.onload = function () {
-	
-	OnButtonClick('all');
-	
+
+    OnButtonClick('all');
+
     var header1 = document.getElementById("tabHeader_1");
-	header1.setAttribute("class", "tabActiveHeader");
+    header1.setAttribute("class", "tabActiveHeader");
     var header2 = document.getElementById("tabHeader_2");
     header1.onclick = onHeader1Click;
     header2.onclick = onHeader2Click;
@@ -38,8 +38,8 @@ window.onload = function () {
 
     var sliderPhoto = document.getElementById("slider-photo");
 
-    
-    
+
+
 }
 
 var readMoreData = [
@@ -59,56 +59,56 @@ function closeModal() {
     document.getElementById("modal").style.display = "none";
 }
 
-function OnButtonClick (type) {
+function OnButtonClick(type) {
     var sliderData = [
         {
-            src: ['./img/slider.jpg', './img/slider.jpg' , './img/slider.jpg' , './img/slider.jpg' , './img/slider.jpg'],
+            src: ['./img/slider.jpg', './img/slider.jpg', './img/slider.jpg', './img/slider.jpg', './img/slider.jpg'],
             type: 'web',
-            text: ';oiuo88558i'
+            text: 'AWESOME PHOTO(WEB)'
         },
         {
-            src: ['./img/slider.jpg', './img/slider.jpg' , './img/slider.jpg' , './img/slider.jpg' , './img/slider.jpg'],
+            src: ['./img/slider.jpg', './img/slider.jpg', './img/slider.jpg', './img/slider.jpg', './img/slider.jpg'],
             type: 'photo',
-            text: 'vfhfvhjfhgfh'
+            text: 'AWESOME PHOTO'
         },
         {
-            src: ['./img/slider.jpg', './img/slider.jpg' , './img/slider.jpg' , './img/slider.jpg' , './img/slider.jpg'],
+            src: ['./img/slider.jpg', './img/slider.jpg', './img/slider.jpg', './img/slider.jpg', './img/slider.jpg'],
             type: 'design',
-            text: 'dshdjdj'
+            text: 'AWESOME PHOTO DESIGN'
         }
     ]
     var sliderPhoto = document.getElementById("slider-photo");
     document.getElementById("slider-photo").innerHTML = ''
-    for (i=0; i<sliderData.length; i++) {
+    for (i = 0; i < sliderData.length; i++) {
         if (sliderData[i].type === type) {
-            for (x=0; x<sliderData[i].src.length; x++) {
+            for (x = 0; x < sliderData[i].src.length; x++) {
                 addAttributes()
             }
         }
     }
     if (type === 'all') {
-    for (i=0; i<sliderData.length; i++) {
-        
-            for (x=0; x<sliderData[i].src.length; x++) {
-                addAttributes() 
-            }
-        
-    }
-}
+        for (i = 0; i < sliderData.length; i++) {
 
-function addAttributes(){
-    var divPhoto = document.createElement('div')
-                divPhoto.setAttribute('class', 'slider-photo-div')
-                var text = document.createElement('div')
-                text.setAttribute('class', 'slider-text')
-                text.appendChild(document.createTextNode(sliderData[i].text))
-                var photo = document.createElement('img')
-                photo.setAttribute('src', sliderData[i].src[x])
-                photo.setAttribute('title', 'slider-photo-div')
-                photo.setAttribute('class', 'slider-photo')
-                divPhoto.appendChild(photo)
-                divPhoto.appendChild(text)
-                sliderPhoto.appendChild(divPhoto)
-}
+            for (x = 0; x < sliderData[i].src.length; x++) {
+                addAttributes()
+            }
+
+        }
+    }
+
+    function addAttributes() {
+        var divPhoto = document.createElement('div')
+        divPhoto.setAttribute('class', 'slider-photo-div')
+        var text = document.createElement('div')
+        text.setAttribute('class', 'slider-text')
+        text.appendChild(document.createTextNode(sliderData[i].text))
+        var photo = document.createElement('img')
+        photo.setAttribute('src', sliderData[i].src[x])
+        photo.setAttribute('title', 'slider-photo-div')
+        photo.setAttribute('class', 'slider-photo')
+        divPhoto.appendChild(photo)
+        divPhoto.appendChild(text)
+        sliderPhoto.appendChild(divPhoto)
+    }
 
 }
