@@ -62,9 +62,10 @@ function closeModal() {
 function OnButtonClick(type) {
     var sliderData = [
         {
-            src: ['./img/slider.jpg', './img/slider.jpg', './img/slider.jpg', './img/slider.jpg', './img/slider.jpg'],
+            src: ['./img/person.jpg', './img/person.jpg', './img/person.jpg', './img/person.jpg', './img/person.jpg'],
             type: 'web',
-            text: 'AWESOME PHOTO(WEB)'
+            text: 'AWESOME PHOTO',
+            // text: 'Eum cu tantas legere complectitur, hinc utamu'
         },
         {
             src: ['./img/slider.jpg', './img/slider.jpg', './img/slider.jpg', './img/slider.jpg', './img/slider.jpg'],
@@ -72,9 +73,9 @@ function OnButtonClick(type) {
             text: 'AWESOME PHOTO'
         },
         {
-            src: ['./img/slider.jpg', './img/slider.jpg', './img/slider.jpg', './img/slider.jpg', './img/slider.jpg'],
+            src: ['./img/graphic.jpg', './img/graphic.jpg', './img/graphic.jpg', './img/graphic.jpg', './img/graphic.jpg'],
             type: 'design',
-            text: 'AWESOME PHOTO DESIGN'
+            text: 'AWESOME PHOTO'
         }
     ]
     var sliderPhoto = document.getElementById("slider-photo");

@@ -89,27 +89,6 @@ header {
     padding-top: 16px;
 }
 
-// .header__li-1:hover::after {
-//     content: "";
-//     width: 67px;
-//     color: rgb(103, 229, 250);
-//     display: inline-block;
-//     border: 2px solid rgb(103, 229, 250);
-//     position: absolute;
-//     top: 101px;
-//     margin-left: -59px;
-// }
-
-// .header__li-2:hover::after {
-//     content: "";
-//     width: 78px;
-//     color: rgb(103, 229, 250);
-//     display: inline-block;
-//     border: 2px solid rgb(103, 229, 250);
-//     position: absolute;
-//     top: 101px;
-//     margin-left: -76px;
-// }
 
 .header__li a:hover::after {
     content: "";
@@ -122,38 +101,7 @@ header {
     margin: 0 auto;
 }
 
-// .header__li-4:hover::after {
-//     content: "";
-//     width: 59px;
-//     color: rgb(103, 229, 250);
-//     display: inline-block;
-//     border: 2px solid rgb(103, 229, 250);
-//     position: absolute;
-//     top: 101px;
-//     margin-left: -56px;
-// }
 
-// .header__li-5:hover::after {
-//     content: "";
-//     width: 57px;
-//     color: rgb(103, 229, 250);
-//     display: inline-block;
-//     border: 2px solid rgb(103, 229, 250);
-//     position: absolute;
-//     top: 101px;
-//     margin-left: -50px;
-// }
-
-// .header__li-6:hover::after {
-//     content: "";
-//     width: 74px;
-//     color: rgb(103, 229, 250);
-//     display: inline-block;
-//     border: 2px solid rgb(103, 229, 250);
-//     position: absolute;
-//     top: 101px;
-//     margin-left: -73px;
-// }
 
 // 1 section
 .wr-home {
@@ -918,7 +866,7 @@ h2 {
 
     img {
         width: 100%;
-        height: 100%;
+        height: auto;
     }
 }
 
@@ -1326,10 +1274,12 @@ h2 {
 .form {
     background-color: #131316;
     padding: 80px 0 50px;
+
     .container-custom {
         width: 47%;
         margin: 0 auto;
     }
+
     button {
         font-family: "Raleway";
         color: #fff;
@@ -1340,6 +1290,7 @@ h2 {
         border: 2px solid #00e1ff;
         margin-top: 35px;
     }
+
     h4,
     p {
         color: #fff;
@@ -1353,38 +1304,306 @@ h2 {
         padding-top: 50px;
         padding-bottom: 123px;
     }
+
     input {
         background-color: #131316;
         border: none;
         border-bottom: 2px solid #fff;
         padding-bottom: 20px;
-        font-family: "Raleway" , serif;
+        font-family: "Raleway", serif;
         color: #fff;
     }
-    input:nth-child(1) {
-        width: 50%;
-    } 
-    input:nth-child(2) {
-        width: 49%;
-    } 
-    input:nth-child(4) {
-        width: 100%;
-        padding-top: 110px;
-    } 
+
 }
+
+.form__input-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form__input {
+    width: 47%;
+
+    input {
+        width: 100%;
+    }
+}
+
+
+
+.form__input::after {
+    content: "";
+    height: 10px;
+    width: 0;
+    display: block;
+    border: 1px solid #fff;
+    position: relative;
+    bottom: 12px;
+    left: 100%;
+}
+
+.form__input::before {
+    content: "";
+    height: 10px;
+    width: 0;
+    display: block;
+    border: 1px solid #fff;
+    position: relative;
+    top: 39px;
+}
+
+.form__input-3 {
+    width: 100%;
+    padding-top: 65px;
+
+    input {
+        width: 100%;
+    }
+}
+
+.form__input-3::after {
+    content: "";
+    height: 10px;
+    width: 0;
+    display: block;
+    border: 1px solid #fff;
+    position: relative;
+    bottom: 12px;
+    left: 100%;
+}
+
+.form__input-3::before {
+    content: "";
+    height: 10px;
+    width: 0;
+    display: block;
+    border: 1px solid #fff;
+    position: relative;
+    top: 39px;
+}
+
+
+
+
 
 
 iframe {
     width: 100%;
 }
+
 footer {
     background-color: #131316;
     padding: 45px 0 50px;
+
     p {
         text-align: center;
         color: #fff;
+
         span {
             color: #03c4de;
         }
+    }
+}
+
+
+@media all and (max-width: 985px) {
+    .wr-service .container-custom {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .wr-service__web {
+        width: 45%;
+        padding-bottom: 35px;
+    }
+
+    .wr-services__main {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .wr-services__web {
+        width: 45%;
+        padding-bottom: 35px;
+    }
+
+    .we-are-the-one__block {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .we-are-the-one__main {
+        width: 40%;
+    }
+
+    .about-ket {
+        .container-custom {
+            display: grid;
+            grid-template-columns: 100%;
+        }
+    }
+
+    .about-ket__main {
+        margin-left: 0;
+    }
+
+    .our-news .container-custom {
+        width: 85%;
+    }
+
+    .our-news__main:nth-child(2),
+    .our-news__main:nth-child(3),
+    .our-news__main:nth-child(4),
+    .our-news__main:nth-child(5) {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .what-clients-say__main {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .what-clients-say__block {
+        width: 40%;
+    }
+
+    .portfolio__slider-menu {
+        width: 100%;
+    }
+
+    .responsive__content {
+        padding-left: 0;
+    }
+
+    .form .container-custom {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+@media all and (max-width: 415px) {
+    h4 {
+        font-size: 25px;
+    }
+
+    .wr-home {
+        h2 {
+            font-size: 35px;
+        }
+    }
+
+    .read-more__main {
+        width: 90%;
+    }
+
+    .wr-service .container-custom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wr-services__main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wr-services__web {
+        width: 75%;
+        padding-bottom: 35px;
+    }
+
+    .wr-service__web {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 70%;
+        padding-bottom: 30px;
+    }
+
+    .we-are-the-one__block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .we-are-the-one__main {
+        width: 60%;
+    }
+
+    .we-are-the-one p {
+        width: 90%;
+    }
+
+    .wr-design__main {
+        width: 90%;
+    }
+
+    .our-news .container-custom {
+        width: 100%;
+    }
+
+    .what-clients-say__header {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .what-clients-say__main {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .what-clients-say__block {
+        width: 60%;
+    }
+
+    .portfolio .portfolio_main {
+        width: 90%;
+    }
+
+    // .portfolio__slider-menu {
+    //     width: 100%;
+    // }
+
+    .video p {
+        width: 90%;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form .container-custom {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .form__input-2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form__input {
+        width: 85%;
+    }
+
+    .form__input-3 {
+        width: 85%;
+        padding-top: 0;
     }
 }
