@@ -1,18 +1,19 @@
 @font-face {
     font-family: "Raleway-extra";
-    // font-weight: 400;
     font-style: normal;
     src: local("Raleway-extra"),
-    url("../fonts/raleway/Raleway-ExtraLight.ttf"),
-    format("ttf");
+        url("../fonts/raleway/Raleway-ExtraLight.ttf"),
+        format("ttf");
     font-display: swap;
 }
+
 @font-face {
     font-family: "Raleway";
-    // font-weight: 700;
     font-style: normal;
     src: local("Raleway"),
-    url("../fonts/raleway/Raleway-Light.ttf"),
-    format("ttf");
+        url("../fonts/raleway/Raleway-Light.ttf") format("ttf"),
+        url("../fonts/raleway/Raleway-Light.woff2") format("woff2"),
+        url("../fonts/raleway/Raleway-Light.woff") format("woff");
     font-display: swap;
 }
+
