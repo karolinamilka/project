@@ -82,24 +82,14 @@ header img {
   font-size: 15px;
 }
 
-.header__nav a:hover {
-  color: #67e5fa;
-}
-
 .header_links {
   width: 48%;
   padding-top: 16px;
 }
 
-.header__li a:hover::after {
-  content: "";
-  width: 88px;
-  color: #67e5fa;
-  display: inline-block;
-  border: 2px solid #67e5fa;
-  position: absolute;
-  top: 101px;
-  margin: 0 auto;
+.header__li a:hover {
+  border-bottom: 2px solid #67e5fa;
+  padding-bottom: 42px;
 }
 
 .wr-home {
@@ -382,13 +372,14 @@ h2 {
   color: #8c8e8f;
   font-weight: 400;
 }
-.read-more__text p {
+.read-more__text p:nth-child(2) {
   padding-top: 24px;
   font-size: 13px;
   color: #c9cdd0;
 }
 .read-more__text p:last-child {
   color: #22e5ff;
+  padding-top: 24px;
 }
 .read-more__text p:last-child:hover {
   cursor: pointer;
@@ -1250,6 +1241,19 @@ footer p span {
     grid-template-columns: 100%;
   }
 
+  .modern-design {
+    padding: 80px 0 80px;
+  }
+
+  .modern-design__img {
+    display: none;
+  }
+
+  .modern-design__main {
+    width: 95%;
+    margin: 0 auto;
+  }
+
   .what-clients-say__main {
     display: flex;
     flex-wrap: wrap;
@@ -1272,6 +1276,22 @@ footer p span {
   .form .container-custom {
     width: 70%;
     margin: 0 auto;
+  }
+}
+@media all and (max-width: 750px) {
+  .responsive__img {
+    display: none;
+  }
+
+  .responsive__tabs {
+    padding-left: 50px;
+  }
+
+  .responsive__main {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    padding-left: 0;
   }
 }
 @media all and (max-width: 415px) {
@@ -1383,6 +1403,10 @@ footer p span {
   .form__input-3 {
     width: 85%;
     padding-top: 0;
+  }
+
+  .form button {
+    margin-left: 30px;
   }
 }
 
