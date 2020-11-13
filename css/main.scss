@@ -1681,6 +1681,7 @@ footer {
 
         .container-custom {
             position: fixed;
+            z-index: 50;
         }
     }
     .header__burger {
