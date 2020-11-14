@@ -397,7 +397,7 @@ h2 {
 }
 
 .read-more__article {
-    width: 50%;
+    width: 75%;
 
     // ?????????????????????
     h3 {
@@ -1553,7 +1553,9 @@ footer {
     .read-more__main {
         width: 90%;
     }
-
+    .our-news__main:nth-child(5) {
+        padding-bottom: 100px;
+    }
     .wr-service .container-custom {
         display: flex;
         flex-direction: column;
