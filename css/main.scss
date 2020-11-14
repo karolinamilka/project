@@ -49,7 +49,7 @@ h4::after {
 
 
 header {
-    
+
 
     .container-custom {
         padding: 17px 0;
@@ -535,6 +535,8 @@ h2 {
 // section 6
 .portfolio {
     background-color: #f7f7f7;
+    padding-bottom: 60px;
+    padding-top: 88px;
 
     h4 {
         color: #3f4244;
@@ -551,12 +553,20 @@ h2 {
     .portfolio_main {
         width: 65%;
         margin: 0 auto;
-        padding-top: 88px;
+        // padding-top: 88px;
     }
 }
 
-// .slider-photo,
-// .slider-photo-div {}
+.portfolio__slider-menu div {
+    border: 1px solid #30dffa;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.slider-photo-div {
+    background-color: #fff;
+    margin-left: 10px;
+}
 
 .slider-photo img,
 .slider-photo-div img {
@@ -569,6 +579,7 @@ h2 {
 }
 
 .portfolio__slider-photo {
+    position: relative;
     height: 400px;
     overflow-x: hidden;
     max-width: 100%;
@@ -586,6 +597,25 @@ h2 {
 .slider-text {
     padding-top: 25px;
     text-align: center;
+}
+
+.slider-text::after {
+    content: "";
+    width: 50px;
+    color: #00e1ff;
+    display: block;
+    border: 1px solid #67e5fa;
+    position: relative;
+    top: 26px;
+    margin: 0 auto;
+}
+
+.slider-text::before {
+    content: "Eum cu tantas legere complectitur, hinc utamu";
+    position: absolute;
+    width: 17%;
+    bottom: 0;
+    // left: 50%;
 }
 
 // section 7
@@ -1537,6 +1567,10 @@ footer {
         padding-bottom: 40px;
         padding-left: 0;
     }
+
+    .portfolio__slider-menu div {
+        padding: 5px 10px;
+    }
 }
 
 @media all and (max-width: 415px) {
@@ -1553,9 +1587,17 @@ footer {
     .read-more__main {
         width: 90%;
     }
-    .our-news__main:nth-child(5) {
-        padding-bottom: 0px;
+
+    .portfolio .portfolio_main {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 10px;
     }
+   
+    .portfolio__slider-menu div {
+        padding: 2px 5px;
+    }
+
     .wr-service .container-custom {
         display: flex;
         flex-direction: column;
@@ -1603,18 +1645,9 @@ footer {
         width: 100%;
     }
 
-    // .modern-design {
-    //     padding: 80px 0 80px;
-    // }
-
-    // .modern-design__img {
-    //     display: none;
-    // }
-
-    // .modern-design__main {
-    //     width: 95%;
-    //     margin: 0 auto;
-    // }
+    .our-news__main:nth-child(5) {
+        padding-bottom: 0px;
+    }
 
     .what-clients-say__header {
         width: 100%;
@@ -1675,17 +1708,22 @@ footer {
         margin-left: 30px;
     }
 }
+
 // burger-menu
 @media all and (max-width: 768px) {
-
+    .portfolio .portfolio_main {
+        width: 90%;
+        margin: 0 auto;
+    }
     header {
-    
+
 
         .container-custom {
             position: fixed;
             z-index: 50;
         }
     }
+
     .header__burger {
         display: block;
         position: relative;
@@ -1744,9 +1782,11 @@ footer {
         position: relative;
         z-index: 2;
     }
-.header__li {
-    padding-top: 30px;
-}
+
+    .header__li {
+        padding-top: 30px;
+    }
+
     .header__burger.active::before {
         transform: rotate(45deg);
         top: 9px;
@@ -1761,10 +1801,12 @@ footer {
         bottom: 9px;
 
     }
+
     .header__nav.active {
         top: 0;
-      }
-      .header__li a:hover {
+    }
+
+    .header__li a:hover {
         // border-bottom: 2px solid rgb(103, 229, 250);
         padding-bottom: 0;
     }

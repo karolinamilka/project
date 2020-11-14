@@ -2,23 +2,23 @@ window.onload = function () {
 
     OnButtonClick('all');
 
-    var header1 = document.getElementById("tabHeader_1");
-    header1.setAttribute("class", "tabActiveHeader");
-    var header2 = document.getElementById("tabHeader_2");
+    var header1 = document.getElementById('tabHeader_1');
+    header1.setAttribute('class', 'tabActiveHeader');
+    var header2 = document.getElementById('tabHeader_2');
     header1.onclick = onHeader1Click;
     header2.onclick = onHeader2Click;
     function onHeader1Click() {
-        document.getElementById("tabpage_2").style.display = "none";
-        document.getElementById("tabpage_1").style.display = "flex";
-        header1.setAttribute("class", "tabActiveHeader");
-        document.getElementById("tabHeader_2").removeAttribute("class");
+        document.getElementById('tabpage_2').style.display = 'none';
+        document.getElementById('tabpage_1').style.display = 'flex';
+        header1.setAttribute('class', 'tabActiveHeader');
+        document.getElementById('tabHeader_2').removeAttribute('class');
 
     }
     function onHeader2Click() {
-        document.getElementById("tabpage_2").style.display = "flex";
-        document.getElementById("tabpage_1").style.display = "none";
-        header2.setAttribute("class", "tabActiveHeader");
-        document.getElementById("tabHeader_1").removeAttribute("class");
+        document.getElementById('tabpage_2').style.display = 'flex';
+        document.getElementById('tabpage_1').style.display = 'none';
+        header2.setAttribute('class', 'tabActiveHeader');
+        document.getElementById('tabHeader_1').removeAttribute('class');
     }
 
     var sliderData = [
@@ -36,7 +36,7 @@ window.onload = function () {
         }
     ]
 
-    var sliderPhoto = document.getElementById("slider-photo");
+    var sliderPhoto = document.getElementById('slider-photo');
 
 
 
@@ -50,13 +50,13 @@ var readMoreData = [
 ]
 
 function openModal(i) {
-    document.getElementById("modal").style.display = "block";
+    document.getElementById('modal').style.display = 'block';
     console.log(i);
-    document.getElementById("modal-content").innerText = readMoreData[i]
+    document.getElementById('modal-content').innerText = readMoreData[i]
 }
 
 function closeModal() {
-    document.getElementById("modal").style.display = "none";
+    document.getElementById('modal').style.display = 'none';
 }
 
 function OnButtonClick(type) {
@@ -78,8 +78,8 @@ function OnButtonClick(type) {
             text: 'AWESOME PHOTO'
         }
     ]
-    var sliderPhoto = document.getElementById("slider-photo");
-    document.getElementById("slider-photo").innerHTML = ''
+    var sliderPhoto = document.getElementById('slider-photo');
+    document.getElementById('slider-photo').innerHTML = ''
     for (i = 0; i < sliderData.length; i++) {
         if (sliderData[i].type === type) {
             for (x = 0; x < sliderData[i].src.length; x++) {
