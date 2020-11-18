@@ -1,9 +1,16 @@
+window.onresize = function() {
+    setDivSize();
+}
+
+
 window.onload = function () {
+
+    
 
     OnButtonClick('all');
 
     var header1 = document.getElementById('tabHeader_1');
-    header1.setAttribute('class', 'tabActiveHeader');
+    header1.setAttribute('class', 'tabActiveHeader'); 
     var header2 = document.getElementById('tabHeader_2');
     header1.onclick = onHeader1Click;
     header2.onclick = onHeader2Click;
@@ -37,9 +44,16 @@ window.onload = function () {
     ]
 
     var sliderPhoto = document.getElementById('slider-photo');
+    setDivSize();
+}
 
 
-
+function setDivSize() {
+    var sliderPhoto = document.getElementById('slider-photo');
+    sliderPhoto.scrollLeft = window.innerWidth;
+    console.log(window.innerWidth);
+    // sliderPhoto.scrollLeft = window.innerWidth;
+    // console.log(window.innerWidth);
 }
 
 var readMoreData = [
@@ -60,22 +74,25 @@ function closeModal() {
 }
 
 function OnButtonClick(type) {
+    setDivSize();
     var sliderData = [
         {
             src: ['./img/person.jpg', './img/person.jpg', './img/person.jpg', './img/person.jpg', './img/person.jpg'],
             type: 'web',
             text: 'AWESOME PHOTO',
-            // text: 'Eum cu tantas legere complectitur, hinc utamu'
+            text2: 'Eum cu tantas legere complectitur, hinc utamu'
         },
         {
             src: ['./img/slider.jpg', './img/slider.jpg', './img/slider.jpg', './img/slider.jpg', './img/slider.jpg'],
             type: 'photo',
-            text: 'AWESOME PHOTO'
+            text: 'AWESOME PHOTO',
+            text2: 'Eum cu tantas legere complectitur, hinc utamu'
         },
         {
             src: ['./img/graphic.jpg', './img/graphic.jpg', './img/graphic.jpg', './img/graphic.jpg', './img/graphic.jpg'],
             type: 'design',
-            text: 'AWESOME PHOTO'
+            text: 'AWESOME PHOTO',
+            text2: 'Eum cu tantas legere complectitur, hinc utamu'
         }
     ]
     var sliderPhoto = document.getElementById('slider-photo');
@@ -103,12 +120,16 @@ function OnButtonClick(type) {
         var text = document.createElement('div')
         text.setAttribute('class', 'slider-text')
         text.appendChild(document.createTextNode(sliderData[i].text))
+        var text2 = document.createElement('div')
+        text2.setAttribute('class', 'slider-text')
+        text2.appendChild(document.createTextNode(sliderData[i].text2))
         var photo = document.createElement('img')
         photo.setAttribute('src', sliderData[i].src[x])
         photo.setAttribute('title', 'slider-photo-div')
         photo.setAttribute('class', 'slider-photo')
         divPhoto.appendChild(photo)
         divPhoto.appendChild(text)
+        divPhoto.appendChild(text2)
         sliderPhoto.appendChild(divPhoto)
     }
 
@@ -131,9 +152,49 @@ header__burger.onclick = function(){
     header__burger.classList.toggle('active');
     header_menu.classList.toggle('active');
     back.classList.toggle('lock');
+    back.toggle('body');
 }
 
 header__list.onclick = function () {
     header__list.classList.remove('active');
     back.classList.toggle('lock');
+    back.toggle('body');
 }
+
+
+// let SOW_MODAL_BTN_SELECTOR = ".js-show-modal";
+// let MODAL_SELECTOR = ".js-modal";
+// let HIDE_CLASS = "u-hidden";
+// let OPEN_MODAL_CLASS = "modal--show";
+// let showModalBtnElement = document.querySelector(SOW_MODAL_BTN_SELECTOR);
+// let modalElement = document.querySelector(MODAL_SELECTOR);
+
+// showModalBtnElement.addEventListener("click", (event) => {
+//   showModalBtnElement.classList.add(HIDE_CLASS);
+//   let scrollX = window.scrollX
+// 	let scrollY = window.scrollY;
+//    window.onscroll = function () { window.scrollTo(scrollX, scrollY); };
+// 		modalElement.classList.add(OPEN_MODAL_CLASS);
+// });
+
+
+
+
+
+
+
+
+// var prevent = function(event) {
+//     window.scrollTo(0, 0);
+//     event ? event.preventDefault() : window.event.returnValue = false;
+//   };
+  
+//   if(window.addEventListener) {
+//     var array = ['DOMMouseScroll', 'mousewheel', 'scroll'],
+//       i = array.length;
+  
+//     while(i--) {
+//       window.addEventListener(array[i], prevent, false);
+//     }
+//   }
+//   else window.onmousewheel = document.onmousewheel = window.onscroll = prevent;

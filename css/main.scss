@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+html, body {
+    scrollbar-color: #95959524 #f7f7f7;    
+    scrollbar-width: thin;  
+    
+}
 .container-custom {
     max-width: 1170px;
     margin: 0 auto;
@@ -580,8 +585,8 @@ h2 {
 
 .portfolio__slider-photo {
     position: relative;
-    height: 400px;
-    overflow-x: hidden;
+    // height: 400px;
+    overflow-y: hidden;
     max-width: 100%;
     display: inline-flex;
     margin-top: 30px;
@@ -594,29 +599,39 @@ h2 {
     justify-content: space-between;
 }
 
-.slider-text {
-    padding-top: 25px;
+.slider-text:nth-child(2) {
+    padding-top: 50px;
     text-align: center;
+   
 }
 
-.slider-text::after {
+.slider-text:nth-child(2)::after {
     content: "";
     width: 50px;
     color: #00e1ff;
     display: block;
     border: 1px solid #67e5fa;
     position: relative;
-    top: 26px;
+    top: 20px;
     margin: 0 auto;
 }
 
-.slider-text::before {
-    content: "Eum cu tantas legere complectitur, hinc utamu";
-    position: absolute;
-    width: 17%;
-    bottom: 0;
-    // left: 50%;
+.slider-text:nth-child(3) {
+    padding-top: 35px;
+    text-align: center;
+    padding-bottom: 50px;
+    width: 55%;
+    margin: 0 auto;
 }
+
+
+// .slider-text::before {
+//     content: "Eum cu tantas legere complectitur, hinc utamu";
+//     position: absolute;
+//     width: 17%;
+//     bottom: 0;
+// left: 50%;
+// }
 
 // section 7
 .video {
@@ -1593,7 +1608,7 @@ footer {
         margin: 0 auto;
         font-size: 10px;
     }
-   
+
     .portfolio__slider-menu div {
         padding: 2px 5px;
     }
@@ -1711,10 +1726,12 @@ footer {
 
 // burger-menu
 @media all and (max-width: 768px) {
+
     .portfolio .portfolio_main {
         width: 90%;
         margin: 0 auto;
     }
+
     header {
 
 
@@ -1804,10 +1821,17 @@ footer {
 
     .header__nav.active {
         top: 0;
+
     }
+
+    .header__burger.active {}
 
     .header__li a:hover {
         // border-bottom: 2px solid rgb(103, 229, 250);
         padding-bottom: 0;
     }
 }
+
+// .body {
+//     position: fixed !important;
+// }
