@@ -855,7 +855,7 @@ h2 {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 10% 90%;
-  grid-template-rows: 100%;
+  grid-template-rows: none;
 }
 .our-news__main:nth-child(2) .our-news__date p:last-child {
   color: #b3b9bc;
@@ -937,7 +937,7 @@ h2 {
   padding-bottom: 102px;
   display: grid;
   grid-template-columns: 10% 90%;
-  grid-template-rows: 100%;
+  grid-template-rows: none;
 }
 .our-news__main:nth-child(5) .our-news__date p:last-child {
   color: #b3b9bc;
