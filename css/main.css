@@ -891,7 +891,7 @@ h2 {
   padding-top: 38px;
   display: grid;
   grid-template-columns: 10% 90%;
-  grid-template-rows: 100%;
+  grid-template-rows: none;
   width: 90%;
   margin: 0 auto;
 }
@@ -1528,7 +1528,6 @@ footer p span {
   .header__burger {
     display: block;
     position: relative;
-    /* width: 30px; */
     width: 30px;
     height: 20px;
     z-index: 3;

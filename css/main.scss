@@ -260,7 +260,6 @@ h2 {
     width: 60%;
 
     button {
-        // фикс или в % ширину???
         font-family: "Raleway";
         color: #00e1ff;
         background-color: transparent;
@@ -269,7 +268,6 @@ h2 {
         width: 172px;
         border: 2px solid #00e1ff;
         margin-top: 39px;
-        // border-color: #00e1ff;
     }
 
     h1 {
@@ -288,8 +286,6 @@ h2 {
 }
 
 .responsive__img {
-    // width: 780px;
-    // height: 385px;
     width: 40%;
     flex-shrink: 0;
 }
@@ -390,7 +386,6 @@ h2 {
     width: 85%;
     margin: 0 auto;
 
-    // padding-top: 112px;
     img {
         width: 100%;
     }
@@ -412,14 +407,12 @@ h2 {
         text-align: right;
         font-weight: 500;
         color: #22e5ff;
-        // font-family: "Raleway", serif;
         font-size: 17px;
     }
 
     p {
         text-align: right;
         color: #dbdedf;
-        // font-family: "Raleway", serif;
         font-size: 14px;
         padding-top: 13px;
     }
@@ -441,9 +434,7 @@ h2 {
         width: 12px;
         height: 12px;
         display: block;
-        // top: 0px;
-        // position: absolute;
-        // left: 40%;
+
         z-index: 10;
         position: relative;
         background-color: #fff;
@@ -561,7 +552,6 @@ h2 {
     .portfolio_main {
         width: 65%;
         margin: 0 auto;
-        // padding-top: 88px;
     }
 }
 
@@ -588,7 +578,6 @@ h2 {
 
 .portfolio__slider-photo {
     position: relative;
-    // height: 400px;
     overflow-y: hidden;
     max-width: 100%;
     display: inline-flex;
@@ -628,13 +617,7 @@ h2 {
 }
 
 
-// .slider-text::before {
-//     content: "Eum cu tantas legere complectitur, hinc utamu";
-//     position: absolute;
-//     width: 17%;
-//     bottom: 0;
-// left: 50%;
-// }
+
 
 // section 7
 .video {
@@ -662,8 +645,7 @@ h2 {
 
     h4 {
         color: #fff;
-        // text-align: center;
-        // width: 610px;
+       
         margin: 0 auto;
     }
 
@@ -715,7 +697,6 @@ h2 {
 .wr-services__main {
     display: flex;
     justify-content: space-around;
-    // padding-top: 90px;
 }
 
 .wr-services__web {
@@ -731,7 +712,6 @@ h2 {
     }
 
     img {
-        // display: block;
         width: 23%;
     }
 }
@@ -987,7 +967,6 @@ h2 {
     background-color: #252726;
 
     h1 {
-        // font-family: "Raleway", serif;
         font-size: 20px;
         font-weight: 500;
         color: #fff;
@@ -995,7 +974,6 @@ h2 {
     }
 
     p {
-        // font-family: "Raleway", serif;
         font-size: 13px;
         color: #fff;
         text-align: center;
@@ -1087,7 +1065,7 @@ h2 {
 
     display: grid;
     grid-template-columns: 10% 90%;
-    grid-template-rows: 100%;
+    grid-template-rows: none;
     width: 90%;
     margin: 0 auto;
 
@@ -1215,7 +1193,6 @@ h2 {
 
     h6,
     p {
-        // font-family: "Raleway", serif;
         color: #fff;
     }
 
@@ -1364,8 +1341,7 @@ h2 {
     }
 
     p {
-        // width: 65%;
-        // margin: 0 auto;
+      
         text-align: center;
         font-size: 13px;
         padding-top: 50px;
@@ -1692,18 +1668,7 @@ footer {
         width: 100%;
     }
 
-    // .our-news__main:nth-child(5) {
-    //     padding-bottom: 80px;
-    // }
-    // .our-news__main:nth-child(5) .read-mor-url {
-    //     padding-bottom: 100px;
-    // }
-    // .our-news__main:nth-child(5) {
-    //     padding-top: 200px;
-    // }
-    // .our-news__main:nth-child(3), .our-news__main:nth-child(4) {
-    //     padding-top: 200px;
-    // }
+    
     .what-clients-say__header {
         width: 100%;
         margin: 0 auto;
@@ -1724,9 +1689,7 @@ footer {
         width: 90%;
     }
 
-    // .portfolio__slider-menu {
-    //     width: 100%;
-    // }
+  
 
     .video p {
         width: 90%;
@@ -1788,13 +1751,11 @@ footer {
     .header__burger {
         display: block;
         position: relative;
-        /* width: 30px; */
         width: 30px;
         height: 20px;
         z-index: 3;
         top: 25px;
         margin-right: 20px;
-        // left: 65px;
     }
 
     .header__burger::before,
@@ -1872,7 +1833,6 @@ footer {
  
 
     .header__li a:hover {
-        // border-bottom: 2px solid rgb(103, 229, 250);
         padding-bottom: 0;
     }
    
