@@ -57,6 +57,10 @@ h4::after {
   margin: 0 auto;
 }
 
+.lock {
+  overflow: hidden;
+}
+
 header .container-custom {
   padding: 17px 0;
   display: flex;
@@ -1243,6 +1247,19 @@ footer p span {
     padding-bottom: 35px;
   }
 
+  .wr-service {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+
+  .wr-service__web:nth-child(2) h1, .wr-service__web:nth-child(3) h1 {
+    padding-top: 30px;
+  }
+
+  .wr-service__web:nth-child(1) h1, .wr-service__web:nth-child(4) h1 {
+    padding-top: 37px;
+  }
+
   .wr-services__main {
     display: flex;
     justify-content: space-around;
@@ -1286,6 +1303,18 @@ footer p span {
     grid-template-columns: 100%;
   }
 
+  .our-news__main:nth-child(5) .read-mor-url {
+    padding-bottom: 100px;
+  }
+
+  .our-news__main:nth-child(5) {
+    padding-top: 200px;
+  }
+
+  .our-news__main:nth-child(3), .our-news__main:nth-child(4) {
+    padding-top: 200px;
+  }
+
   .modern-design {
     padding: 80px 0 80px;
   }
@@ -1311,7 +1340,7 @@ footer p span {
   }
 
   .portfolio__slider-menu {
-    width: 100%;
+    width: 80%;
   }
 
   .responsive__content {
@@ -1342,6 +1371,14 @@ footer p span {
   .portfolio__slider-menu div {
     padding: 5px 10px;
   }
+
+  .portfolio__slider-menu {
+    width: 75%;
+  }
+
+  .read-more__border {
+    margin: 0 30px;
+  }
 }
 @media all and (max-width: 415px) {
   h4 {
@@ -1354,6 +1391,10 @@ footer p span {
 
   .read-more__main {
     width: 90%;
+  }
+
+  .read-more__border {
+    margin: 0 20px;
   }
 
   .portfolio .portfolio_main {
@@ -1413,10 +1454,6 @@ footer p span {
     width: 100%;
   }
 
-  .our-news__main:nth-child(5) {
-    padding-bottom: 80px;
-  }
-
   .what-clients-say__header {
     width: 100%;
     margin: 0 auto;
@@ -1472,6 +1509,11 @@ footer p span {
     margin-left: 30px;
   }
 }
+@media all and (max-width: 321px) {
+  .portfolio__slider-menu {
+    width: 90%;
+  }
+}
 @media all and (max-width: 768px) {
   .portfolio .portfolio_main {
     width: 90%;
@@ -1487,11 +1529,11 @@ footer p span {
     display: block;
     position: relative;
     /* width: 30px; */
-    width: 100%;
+    width: 30px;
     height: 20px;
     z-index: 3;
     top: 25px;
-    left: 65px;
+    margin-right: 20px;
   }
 
   .header__burger::before,

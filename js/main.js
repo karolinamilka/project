@@ -51,6 +51,7 @@ window.onload = function () {
 function setDivSize() {
     var sliderPhoto = document.getElementById('slider-photo');
     sliderPhoto.scrollLeft = window.innerWidth;
+    window.innerWidth = 850;
     console.log(window.innerWidth);
     // sliderPhoto.scrollLeft = window.innerWidth;
     // console.log(window.innerWidth);
@@ -67,10 +68,14 @@ function openModal(i) {
     document.getElementById('modal').style.display = 'block';
     console.log(i);
     document.getElementById('modal-content').innerText = readMoreData[i]
+    back.classList.toggle('lock');
+
 }
 
 function closeModal() {
     document.getElementById('modal').style.display = 'none';
+    back.classList.toggle('lock');
+
 }
 
 function OnButtonClick(type) {
@@ -145,21 +150,46 @@ function OnButtonClick(type) {
 
 let header__burger = document.querySelector('.header__burger');
 let header_menu = document.querySelector('.header__nav');
-let back = document.querySelector('body');
+const back = document.querySelector('body');
 let header__list = document.querySelector('.header__list');
+
+
+
+
+
+
 
 header__burger.onclick = function(){
     header__burger.classList.toggle('active');
     header_menu.classList.toggle('active');
     back.classList.toggle('lock');
-    back.toggle('body');
+    // back.style.overflow 
+    //     back.toggle('body');
 }
 
 header__list.onclick = function () {
     header__list.classList.remove('active');
     back.classList.toggle('lock');
-    back.toggle('body');
+//     back.toggle('body');
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // let SOW_MODAL_BTN_SELECTOR = ".js-show-modal";
