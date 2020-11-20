@@ -528,8 +528,19 @@ h2 {
   margin: 0 auto;
 }
 
-.portfolio__slider-menu div {
+/*.portfolio__slider-menu div {
   border: 1px solid #30dffa;
+  padding: 10px 15px;
+  cursor: pointer;
+}*/
+
+.slider-photo__button-selected {
+  border: 1px solid #30dffa;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.slider-photo__button {
   padding: 10px 15px;
   cursor: pointer;
 }

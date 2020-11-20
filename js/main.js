@@ -99,6 +99,11 @@ function OnButtonClick(type) {
             text: 'AWESOME PHOTO',
             text2: 'Eum cu tantas legere complectitur, hinc utamu'
         }
+    var allTypes = [
+        'all',
+        'web',
+        'photo',
+        'design'
     ]
     var sliderPhoto = document.getElementById('slider-photo');
     document.getElementById('slider-photo').innerHTML = ''
@@ -115,7 +120,15 @@ function OnButtonClick(type) {
             for (x = 0; x < sliderData[i].src.length; x++) {
                 addAttributes()
             }
+    document
+        .getElementById('slider-photo__button-'.concat(type))
+        .setAttribute('class','slider-photo__button-selected')
 
+    for(var t of allTypes) {
+        if(t !== type) {
+            document
+                .getElementById('slider-photo__button-'.concat(t))
+                .setAttribute('class','slider-photo__button')
         }
     }
 
