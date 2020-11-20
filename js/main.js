@@ -1,19 +1,19 @@
-window.onresize = function() {
+window.onresize = function () {
     setDivSize();
 }
 
 
 window.onload = function () {
 
-    
 
     OnButtonClick('all');
 
     var header1 = document.getElementById('tabHeader_1');
-    header1.setAttribute('class', 'tabActiveHeader'); 
+    header1.setAttribute('class', 'tabActiveHeader');
     var header2 = document.getElementById('tabHeader_2');
     header1.onclick = onHeader1Click;
     header2.onclick = onHeader2Click;
+
     function onHeader1Click() {
         document.getElementById('tabpage_2').style.display = 'none';
         document.getElementById('tabpage_1').style.display = 'flex';
@@ -21,6 +21,7 @@ window.onload = function () {
         document.getElementById('tabHeader_2').removeAttribute('class');
 
     }
+
     function onHeader2Click() {
         document.getElementById('tabpage_2').style.display = 'flex';
         document.getElementById('tabpage_1').style.display = 'none';
@@ -99,6 +100,7 @@ function OnButtonClick(type) {
             text: 'AWESOME PHOTO',
             text2: 'Eum cu tantas legere complectitur, hinc utamu'
         }
+    ]
     var allTypes = [
         'all',
         'web',
@@ -120,15 +122,18 @@ function OnButtonClick(type) {
             for (x = 0; x < sliderData[i].src.length; x++) {
                 addAttributes()
             }
+        }
+    }
+
     document
         .getElementById('slider-photo__button-'.concat(type))
-        .setAttribute('class','slider-photo__button-selected')
+        .setAttribute('class', 'slider-photo__button-selected')
 
-    for(var t of allTypes) {
-        if(t !== type) {
+    for (var t of allTypes) {
+        if (t !== type) {
             document
                 .getElementById('slider-photo__button-'.concat(t))
-                .setAttribute('class','slider-photo__button')
+                .setAttribute('class', 'slider-photo__button')
         }
     }
 
@@ -154,29 +159,17 @@ function OnButtonClick(type) {
 }
 
 
-
-
-
-
-
-
-
 let header__burger = document.querySelector('.header__burger');
 let header_menu = document.querySelector('.header__nav');
 const back = document.querySelector('body');
 let header__list = document.querySelector('.header__list');
 
 
-
-
-
-
-
-header__burger.onclick = function(){
+header__burger.onclick = function () {
     header__burger.classList.toggle('active');
     header_menu.classList.toggle('active');
     back.classList.toggle('lock');
-    // back.style.overflow 
+    // back.style.overflow
     //     back.toggle('body');
 }
 
@@ -185,24 +178,6 @@ header__list.onclick = function () {
     back.classList.toggle('lock');
 //     back.toggle('body');
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // let SOW_MODAL_BTN_SELECTOR = ".js-show-modal";
@@ -221,21 +196,15 @@ header__list.onclick = function () {
 // });
 
 
-
-
-
-
-
-
 // var prevent = function(event) {
 //     window.scrollTo(0, 0);
 //     event ? event.preventDefault() : window.event.returnValue = false;
 //   };
-  
+
 //   if(window.addEventListener) {
 //     var array = ['DOMMouseScroll', 'mousewheel', 'scroll'],
 //       i = array.length;
-  
+
 //     while(i--) {
 //       window.addEventListener(array[i], prevent, false);
 //     }
