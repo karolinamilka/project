@@ -44,6 +44,22 @@ window.onload = function () {
         }
     ]
 
+    $('#sc-left').click(()=> {
+        $('.slider-photo-div').map(function () {
+                $(this).animate({
+                    'left': `+=${(this.offsetWidth)}`
+                }, 500, 'swing')
+        })
+    })
+
+    $('#sc-right').click(()=> {
+        $('.slider-photo-div').map(function () {
+                $(this).animate({
+                    'left': `-=${(this.offsetWidth)}`
+                }, 500, 'swing') 
+        })
+    })
+
     var sliderPhoto = document.getElementById('slider-photo');
     setDivSize();
 }
