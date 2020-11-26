@@ -520,7 +520,9 @@ h2 {
     margin-left: 10px;
   }
 }
+
 .slider-photo-div {
+  position: relative;
   background-color: #fff;
 }
 
