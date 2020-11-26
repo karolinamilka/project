@@ -19,9 +19,9 @@
             </div>
             <nav class="header__nav">
                 <ul class="header__list">
-                    <li class="header__li"><a href="#">home</a></li>
-                    <li class="header__li"><a href="#">services</a></li>
-                    <li class="header__li"><a href="#">portfolio</a></li>
+                    <li class="header__li"><a href="#home">home</a></li>
+                    <li class="header__li"><a href="#wr-service">services</a></li>
+                    <li class="header__li"><a href="#portfolio">portfolio</a></li>
                     <li class="header__li"><a href="#">about</a></li>
                     <li class="header__li"><a href="#">news</a></li>
                     <li class="header__li"><a href="#">Contact</a></li>
@@ -30,7 +30,7 @@
         </div>
     </header>
     <!-- section 1 -->
-    <section class="wr-home">
+    <section class="wr-home" id="home">
         <div class="container-custom">
             <h2>WE MAKE WEBSITES</h2>
             <button>START TOUR</button>
@@ -38,7 +38,7 @@
         </div>
     </section>
     <!-- section 2 -->
-    <section class="wr-service">
+    <section class="wr-service" id="wr-service">
         <div class="container-custom">
             <div class="wr-service__web">
                 <div class="wr-service__img">
@@ -225,7 +225,7 @@
         </div>
     </section>
     <!-- section 6 -->
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <div class="container-custom">
             <div class="portfolio_main">
                 <h4>Our Portfolio</h4>
@@ -236,13 +236,13 @@
                 </p>
                 <div class="portfolio__slider">
                     <div class="portfolio__slider-menu">
-                        <div id="slider-photo__button" onclick="OnButtonClick('all')">ALL
+                        <div id="slider-photo__button-all" class="slider-photo__button-selected" onclick="OnButtonClick('all')">ALL
                         </div>
-                        <div id="slider-photo__button" onclick="OnButtonClick('web')">WEB
+                        <div id="slider-photo__button-web" class="slider-photo__button" onclick="OnButtonClick('web')">WEB
                         </div>
-                        <div id="slider-photo__button" onclick="OnButtonClick('photo')"> PHOTOGRAPHY
+                        <div id="slider-photo__button-photo" class="slider-photo__button" onclick="OnButtonClick('photo')"> PHOTOGRAPHY
                         </div>
-                        <div id="slider-photo__button" onclick="OnButtonClick('design')">GRAPHIC DESIGN
+                        <div id="slider-photo__button-design" class="slider-photo__button" onclick="OnButtonClick('design')">GRAPHIC DESIGN
                         </div>
                     </div>
                 </div>
@@ -277,24 +277,27 @@
             <div class="wr-services__main">
                 <div class="wr-services__web">
                     <img src="./img/8-section/projects.png" alt="projects">
-
-                    <p>3054</p>
+                    <p class="counter" data-target="3054">
+                        3054
+                    </p>
                     <h1>COMPLETED PROJECTS</h1>
                 </div>
                 <div class="wr-services__web">
                     <img src="./img/8-section/clicks.png" alt="clicks">
-                    <p>7243873</p>
+                        <p class="counter" data-target="7243873">
+                            7243873                        </p>
                     <h1>CLICK PRESED</h1>
                 </div>
                 <div class="wr-services__web">
                     <img src="./img/8-section/mails.png" alt="mails">
-
-                    <p>4670</p>
+                    <p class="counter" data-target="4670">
+                        4670
+                    </p>
                     <h1>MAILS SENTED</h1>
                 </div>
                 <div class="wr-services__web">
                     <img src="./img/8-section/jokes.png" alt="jokes">
-                    <p>939</p>
+                    <p class="counter" data-target="939">939</p>
                     <h1>JOKES TOLDS</h1>
 
                 </div>
@@ -894,7 +897,7 @@
                 <div class="form__input-3">
                     <input type="text" placeholder="Your message here"></div>
             </form>
-            <button>Send Message</button>
+            <button class="mail-btn" type="submit">Send Message</button>
         </div>
     </section>
     <iframe
@@ -932,7 +935,6 @@
 
         </div>
     </div> -->
-
 
 
     <script src="./js/main.js"></script>
