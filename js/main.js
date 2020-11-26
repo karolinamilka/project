@@ -46,17 +46,23 @@ window.onload = function () {
 
     $('#sc-left').click(()=> {
         $('.slider-photo-div').map(function () {
+            var {x, width} = $('.slider-photo-div').first()[0].getBoundingClientRect()
+            if(x < 0 ) {
                 $(this).animate({
                     'left': `+=${(this.offsetWidth)}`
                 }, 500, 'swing')
+            }
         })
     })
 
     $('#sc-right').click(()=> {
         $('.slider-photo-div').map(function () {
+            var {x, width} = $('.slider-photo-div').last()[0].getBoundingClientRect()
+            if(x + width > window.innerWidth) {
                 $(this).animate({
                     'left': `-=${(this.offsetWidth)}`
                 }, 500, 'swing') 
+            }
         })
     })
 
