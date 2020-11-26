@@ -489,6 +489,17 @@ h2 {
   border: 1px solid #30dffa;
   padding: 10px 15px;
   cursor: pointer;
+}*/
+
+.slider-photo__button-selected {
+  border: 1px solid #30dffa;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.slider-photo__button {
+  padding: 10px 15px;
+  cursor: pointer;
 }
 
 .slider-photo__button {
