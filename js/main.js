@@ -73,7 +73,9 @@ window.onload = function () {
 
 function setDivSize() {
     var sliderPhoto = document.getElementById('slider-photo');
-    sliderPhoto.scrollLeft = window.innerWidth;
+    if(window.matchMedia("(min-width: 768px)").matches) {
+        sliderPhoto.scrollLeft = window.innerWidth;        
+    } 
     window.innerWidth = 850;
     console.log(window.innerWidth);
     // sliderPhoto.scrollLeft = window.innerWidth;
