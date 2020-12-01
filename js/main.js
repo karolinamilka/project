@@ -163,15 +163,41 @@ let header__burger = document.querySelector('.header__burger');
 let header_menu = document.querySelector('.header__nav');
 const back = document.querySelector('body');
 let header__list = document.querySelector('.header__list');
-
+// const menuHide = document.querySelector('#menu-hide');
 
 header__burger.onclick = function () {
     header__burger.classList.toggle('active');
     header_menu.classList.toggle('active');
     back.classList.toggle('lock');
+    
     // back.style.overflow
     //     back.toggle('body');
 }
+
+
+header_menu.onclick = function() {
+header_menu.classList.remove('active');
+header__burger.classList.remove('active');
+back.classList.remove('lock');
+}
+
+
+// menuHide.addEventListener('click', function (e) {
+// 	let target = e.target;
+// 	if (target.closest('.menu--hide')) {
+// 		menuToggle.classList.toggle('burger--active');
+// 		menuHide.classList.toggle('menu--hide');
+
+// 		if (window.matchMedia('(max-width: 768px)').matches) {
+// 			document.querySelector('.header').removeAttribute('style');
+// 			body.style.overflow = 'visible';
+// 		}
+// 	}
+// });
+
+
+
+
 
 // header__list.onclick = function () {
 //     header__list.classList.remove('active');
