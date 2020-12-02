@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- <link rel="stylesheet" href="./css/main.css"> -->
     <title>Document</title>
     <link rel="stylesheet" href="./css/main.css">
@@ -251,7 +252,11 @@
                 </div>
             </div>
         </div>
-        <div id="slider-photo" class="portfolio__slider-photo">
+        <div class="portfolio__slider-container">
+            <a class="slider-control slider-control-left" id="sc-left" role="button"></a>
+            <a class="slider-control slider-control-right" id="sc-right" role="button"></a>
+            <div id="slider-photo" class="portfolio__slider-photo">
+            </div>
         </div>
 
     </section>
