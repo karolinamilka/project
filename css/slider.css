@@ -33,7 +33,7 @@
   position: relative;
 }
 .slider-control {
-  z-index: 1000;
+  z-index: 2;
   position: absolute;
   top: 50%;
   display: flex;
