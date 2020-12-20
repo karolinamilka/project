@@ -61,7 +61,10 @@ h4::after {
 
 
 header {
-
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    z-index: 100;
 
     .container-custom {
         padding: 17px 0;
@@ -139,10 +142,10 @@ header {
 
 // 1 section
 .wr-home {
-    background-image: url("../img/wr-home.jpg");
+    background-image: url("https://i.imgur.com/1tWBKGE.jpg");
     background-size: cover;
     background-position: center;
-    padding: 272px 0 282px;
+    padding: 400px 0 450px;
 
     .container-custom {
         display: flex;
@@ -929,6 +932,9 @@ h2 {
     }
 }
 
+// .slick-list .draggable {
+//     width: 100%;
+// }
 // section 10
 .about-ket {
     padding-top: 93px;
@@ -985,7 +991,7 @@ h2 {
 
 // section 11
 .little-slider {
-    background-image: url(../img/back.jpg);
+    background-image: url(https://i.imgur.com/5ztZFvA.jpg);
     object-fit: cover;
     object-position: bottom;
 
@@ -1204,7 +1210,7 @@ h2 {
 
 // section 13
 .modern-design {
-    background-image: url(../img/background-design.jpg);
+    background-image: url(https://i.imgur.com/9Ba4hA1.jpg);
     background-size: cover;
     background-position: bottom;
     padding: 139px 0 0px;
@@ -1641,11 +1647,11 @@ footer {
         padding-bottom: 35px;
     }
 
-    .we-are-the-one__block {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
+    // .we-are-the-one__block {
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //     justify-content: space-around;
+    // }
 
     .we-are-the-one__main {
         width: 40%;
@@ -1826,11 +1832,11 @@ footer {
         padding-bottom: 60px;
     }
 
-    .we-are-the-one__block {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+    // .we-are-the-one__block {
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items: center;
+    // }
 
     .we-are-the-one__main {
         width: 60%;
@@ -1915,6 +1921,13 @@ footer {
 
 // burger-menu
 @media all and (max-width: 768px) {
+
+
+    .we-are-the-one__block {
+        width: 90%;
+        margin: 0 auto;
+    }
+
     .wr-design p {
         padding-bottom: 80px;
     }

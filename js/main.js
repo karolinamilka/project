@@ -113,13 +113,13 @@ function OnButtonClick(type) {
             text2: 'Eum cu tantas legere complectitur, hinc utamu'
         },
         {
-            src: ['./img/slider.jpg', './img/slider.jpg', './img/slider.jpg', './img/slider.jpg', './img/slider.jpg'],
+            src: ['https://i.imgur.com/V3aB5ij.jpg', 'https://i.imgur.com/V3aB5ij.jpg', 'https://i.imgur.com/V3aB5ij.jpg', 'https://i.imgur.com/V3aB5ij.jpg', 'https://i.imgur.com/V3aB5ij.jpg'],
             type: 'photo',
             text: 'AWESOME PHOTO',
             text2: 'Eum cu tantas legere complectitur, hinc utamu'
         },
         {
-            src: ['./img/graphic.jpg', './img/graphic.jpg', './img/graphic.jpg', './img/graphic.jpg', './img/graphic.jpg'],
+            src: ['https://i.imgur.com/vXzWGC9.jpg', 'https://i.imgur.com/vXzWGC9.jpg', 'https://i.imgur.com/vXzWGC9.jpg', 'https://i.imgur.com/vXzWGC9.jpg', 'https://i.imgur.com/vXzWGC9.jpg'],
             type: 'design',
             text: 'AWESOME PHOTO',
             text2: 'Eum cu tantas legere complectitur, hinc utamu'
@@ -285,3 +285,53 @@ counters.forEach((counter) => {
     };
     updateCounter()
 })
+
+
+function getPadding() {
+    document.getElementById('wr-service').style.paddingTop = '190px';
+    document.getElementById('portfolio').style.paddingTop = '120px';
+    document.getElementById('about-ket').style.paddingTop = '190px';
+    document.getElementById('news').style.paddingTop = '100px';
+    document.getElementById('form').style.paddingTop = '200px';
+}
+
+
+
+// $('.we-are-the-one__block').slick({
+//     slidesToShow: 4,
+//     slidesToScrol: 2,
+   
+//     responsive: [
+       
+//         {
+//           breakpoint: 767,
+//           settings: {
+//             slidesToShow: 1,
+//             slidesToScroll: 1,
+//             dots: true,
+//           }
+//         }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+//       ]
+// });
+
+// function setDivSize() {
+//     if(window.matchMedia("(min-width: 768px)").matches) {
+//     } 
+//     $('.we-are-the-one__block').slick({
+//         slidesToShow: 1,
+//         slidesToScrol: 1,
+       
+//     });
+// }
+
+
+if( $(window).width() < 769 ) {
+    $('.we-are-the-one__block').slick({
+        slidesToShow: 1,
+        slidesToScrol: 1,
+       dots: true,
+    });
+    }
